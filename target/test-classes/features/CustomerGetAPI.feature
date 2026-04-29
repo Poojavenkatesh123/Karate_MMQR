@@ -1,7 +1,7 @@
 Feature: User Status Check by Mobile Number
  
   Background:
-    * url 'http://mpay-uat.okdollar.org'
+    * url baseUrl
  
     Scenario: Verify API returns 200 status
     Given path '/onboarded-users/v1/payplus/mobileNumber/00959972972972'
