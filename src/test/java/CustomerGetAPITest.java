@@ -1,9 +1,16 @@
-import com.intuit.karate.junit5.Karate;
+package runners;
 
-class CustomerGetAPITest {
+import com.intuit.karate.Results;
+import com.intuit.karate.Runner;
 
-    @Karate.Test
-    Karate testCustomerGetAPI() {
-        return Karate.run("classpath:features/CustomerGetAPI.feature").parallel(5);
+public class ParallelRunner {
+
+    public static void main(String[] args) {
+        Results results = Runner.path("classpath:features")
+                                .parallel(5);
+
+        if (results.getFailCount() > 0) {
+            throw new RuntimeException("Test failed");
+        }
     }
 }
