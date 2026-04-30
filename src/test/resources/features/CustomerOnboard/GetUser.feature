@@ -21,7 +21,7 @@ Scenario: Verify API returns 200 status
 # POSITIVE TEST CASES
 # ═══════════════════════════════════════════════════════════════════
 
-# TC-001: ACTIVE Account
+# TC-001: ACTIVE
 Scenario: Mobile number belongs to an ACTIVE account
     Given path '/onboarded-users/v1/payplus/mobileNumber/00959972972972'
     When method GET
