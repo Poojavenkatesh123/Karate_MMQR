@@ -1,0 +1,29 @@
+name: Karate API Tests
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  karate-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Run Karate Tests
+        run: mvn clean test
+
+      - name: Archive Karate Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: karate-html-report
+          path: target/karate-reports/

@@ -4,6 +4,6 @@ class CustomerGetAPITest {
 
     @Karate.Test
     Karate testCustomerGetAPI() {
-        return Karate.run("classpath:features/CustomerGetAPI.feature");
+        return Karate.run("classpath:features/CustomerGetAPI.feature").parallel(5);
     }
 }
