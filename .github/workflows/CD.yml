@@ -8,6 +8,9 @@ jobs:
   karate-test:
     runs-on: ubuntu-latest
 
+    env:
+      ENV: uat   # 👈 change to dev / uat / prod anytime
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -18,10 +21,10 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Run Karate Tests
-        run: mvn clean test
+      - name: Build & Run Karate Tests
+        run: mvn clean test -Dkarate.env=${{ env.ENV }}
 
-      - name: Upload Report
+      - name: Upload Karate HTML Report
         if: always()
         uses: actions/upload-artifact@v4
         with:

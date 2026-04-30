@@ -84,7 +84,7 @@ Feature: User Status Check by Mobile Number
   # NEGATIVE TEST CASES
   # ═══════════════════════════════════════════════════════════════════
  
-  # TC-003: NOT FOUND — Wrong mobile number
+  # TC-003: NOT FOUND — Wrong mobile number test
   Scenario: Mobile number does not exist in system
     Given path '/onboarded-users/v1/payplus/mobileNumber/00959972972978'
     When method GET
