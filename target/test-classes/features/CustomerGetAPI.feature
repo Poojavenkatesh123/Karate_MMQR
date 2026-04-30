@@ -1,11 +1,12 @@
 Feature: User Status Check by Mobile Number
 
 Background:
-    # 🔥 Debug (to confirm CI is loading config)
-    * print 'Base URL from config:', baseUrl
 
-    # ❗ Fallback (prevents CI failure if config not loaded)
-    * def baseUrl = baseUrl ? baseUrl : 'http://mpay-uat.okdollar.org'
+    # ✅ SAFE fallback (no ReferenceError)
+    * def baseUrl = karate.get('baseUrl') ? karate.get('baseUrl') : 'http://mpay-uat.okdollar.org'
+
+    # ✅ Now it's safe to print
+    * print 'Base URL:', baseUrl
 
     * url baseUrl
 

@@ -3,6 +3,7 @@ name: Karate API Tests
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:   # 👈 optional manual trigger
 
 jobs:
   karate-test:
@@ -15,8 +16,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Debug files (VERY IMPORTANT)
-        run: ls -R
+      - name: Debug Project Structure (IMPORTANT 🔥)
+        run: |
+          echo "Listing project files..."
+          ls -R
+          echo "Checking karate-config.js..."
+          ls src/test/java || true
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -24,10 +29,19 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Run Karate Tests
-        run: mvn clean test
+      - name: Build Project (skip tests)
+        run: mvn clean install -DskipTests
 
-      - name: Upload Report
+      - name: Run Karate Tests
+        run: mvn test
+
+      - name: Debug Reports Folder
+        if: always()
+        run: |
+          echo "Listing reports..."
+          ls -R target || true
+
+      - name: Upload Karate HTML Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
