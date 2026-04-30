@@ -49,25 +49,25 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-04-30 12:06:24 pm</div>
+    <div>2026-04-30 12:19:08 pm</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1:6]"><span>[1:6]</span> <span>Verify API returns 200 status</span></a>
+            <a href="#[1:13]"><span>[1:13]</span> <span>Verify API returns 200 status</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[2:16]"><span>[2:16]</span> <span>Mobile number belongs to an ACTIVE account</span></a>
+            <a href="#[2:24]"><span>[2:24]</span> <span>Mobile number belongs to an ACTIVE account</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[3:50]"><span>[3:50]</span> <span>Mobile number belongs to an IN_ACTIVE account</span></a>
+            <a href="#[3:62]"><span>[3:62]</span> <span>Mobile number belongs to an IN_ACTIVE account</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[4:88]"><span>[4:88]</span> <span>Mobile number does not exist in system</span></a>
+            <a href="#[4:104]"><span>[4:104]</span> <span>Mobile number does not exist in system</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[5:105]"><span>[5:105]</span> <span>No mobile number passed in path</span></a>
+            <a href="#[5:122]"><span>[5:122]</span> <span>No mobile number passed in path</span></a>
           </div>
         </div>
       </div>
@@ -81,36 +81,106 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:6]">
+          <div class="scenario-heading" id="[1:13]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:6]</span>
+                Scenario: <span>[1:13]</span>
                 <span class="scenario-name">Verify API returns 200 status</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>389</span>
+              <span>ms:</span>&nbsp;<span>298</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:6]bg">
+            <div class="step-container" id="[1:13]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:6]bg"><div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 🔥 Debug (to confirm CI is loading config)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Base URL from config:&#39;, baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># ❗ Fallback (prevents CI failure if config not loaded)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = baseUrl ? baseUrl : &#39;http://mpay-uat.okdollar.org&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>url baseUrl</span>
@@ -137,8 +207,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref passed">7</div>
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;/onboarded-users/v1/payplus/mobileNumber/00959972972972&#39;</span>
@@ -165,14 +235,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.8">
-      <div class="step-ref passed">8</div>
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">388</div>
+    <div class="time-cell passed">293</div>
   </div>
 
    
@@ -193,8 +263,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.9">
-      <div class="step-ref passed">9</div>
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -217,36 +287,106 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[2:16]">
+          <div class="scenario-heading" id="[2:24]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[2:16]</span>
+                Scenario: <span>[2:24]</span>
                 <span class="scenario-name">Mobile number belongs to an ACTIVE account</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>180</span>
+              <span>ms:</span>&nbsp;<span>178</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[2:16]bg">
+            <div class="step-container" id="[2:24]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[2:16]bg"><div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 🔥 Debug (to confirm CI is loading config)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Base URL from config:&#39;, baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># ❗ Fallback (prevents CI failure if config not loaded)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = baseUrl ? baseUrl : &#39;http://mpay-uat.okdollar.org&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>url baseUrl</span>
@@ -273,8 +413,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.17">
-      <div class="step-ref passed">17</div>
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;/onboarded-users/v1/payplus/mobileNumber/00959972972972&#39;</span>
@@ -301,196 +441,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.18">
-      <div class="step-ref passed">18</div>
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">157</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.19">
-      <div class="step-ref passed">19</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># --- Static Fields (exact match) ---</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.21">
-      <div class="step-ref passed">21</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.status == &#39;ACTIVE&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">14</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.22">
-      <div class="step-ref passed">22</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.activeFlag == true</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.23">
-      <div class="step-ref passed">23</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.message == &#39;Account is Active&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.24">
-      <div class="step-ref passed">24</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.mobileNumber == &#39;00959972972972&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># --- Dynamic Fields (must have data) ---</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.26">
-      <div class="step-ref passed">26</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.name != null</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">159</div>
   </div>
 
    
@@ -515,35 +473,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">27</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.fatherName != null</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.28">
-      <div class="step-ref passed">28</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.gender != null</span>
+        <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -571,10 +501,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">29</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.dateOfBirth != null</span>
+        <span>And</span>&nbsp;<span>match response.status == &#39;ACTIVE&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">12</div>
   </div>
 
    
@@ -599,10 +529,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">30</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.financialAccountNumber != null</span>
+        <span>And</span>&nbsp;<span>match response.activeFlag == true</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -627,7 +557,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">31</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.createdDateTime != null</span>
+        <span>And</span>&nbsp;<span>match response.message == &#39;Account is Active&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -655,35 +585,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">32</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.createdAt != null</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.33">
-      <div class="step-ref passed">33</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.updatedAt != null</span>
+        <span>And</span>&nbsp;<span>match response.mobileNumber == &#39;00959972972972&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -711,7 +613,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">34</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.addressInfo.country != null</span>
+        <span>And</span>&nbsp;<span>match response.name == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -739,7 +641,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">35</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.addressInfo.division != null</span>
+        <span>And</span>&nbsp;<span>match response.fatherName == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -767,7 +669,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">36</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.addressInfo.townShip != null</span>
+        <span>And</span>&nbsp;<span>match response.gender == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -795,7 +697,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">37</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.addressInfo.street != null</span>
+        <span>And</span>&nbsp;<span>match response.dateOfBirth == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -823,7 +725,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">38</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].idType != null</span>
+        <span>And</span>&nbsp;<span>match response.financialAccountNumber == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -851,7 +753,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">39</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[0].fileId != null</span>
+        <span>And</span>&nbsp;<span>match response.createdDateTime == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -879,7 +781,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">40</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[1].fileId != null</span>
+        <span>And</span>&nbsp;<span>match response.createdAt == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -907,35 +809,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">41</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.accountId == null</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.42">
-      <div class="step-ref passed">42</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.addressInfo.villageTract  != null</span>
+        <span>And</span>&nbsp;<span>match response.updatedAt == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -963,7 +837,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">43</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].idNumber  != null</span>
+        <span>And</span>&nbsp;<span>match response.addressInfo.country == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -991,7 +865,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">44</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[0].type  != null</span>
+        <span>And</span>&nbsp;<span>match response.addressInfo.division == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1019,7 +893,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">45</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[0].assetUrl  != null</span>
+        <span>And</span>&nbsp;<span>match response.addressInfo.townShip == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1047,7 +921,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">46</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[1].type  != null</span>
+        <span>And</span>&nbsp;<span>match response.addressInfo.street == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1075,7 +949,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">47</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[1].assetUrl  != null</span>
+        <span>And</span>&nbsp;<span>match response.addressInfo.villageTract == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1093,41 +967,45 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[3:50]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[3:50]</span>
-                <span class="scenario-name">Mobile number belongs to an IN_ACTIVE account</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>226</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[3:50]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[3:50]bg"><div>
+          <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url baseUrl</span>
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].idType == &#39;#notnull&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].idNumber == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1155,7 +1033,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">51</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;/onboarded-users/v1/payplus/mobileNumber/00959752781355&#39;</span>
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[0].fileId == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1183,10 +1061,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">52</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method GET</span>
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[1].fileId == &#39;#notnull&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">217</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1211,7 +1089,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">53</div>
       
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[0].type == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1232,24 +1110,45 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div><div>
   
 
+  
+
   <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
       
-      <div class="step-cell comment"># --- Static Fields (exact match) ---</div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[1].type == &#39;#notnull&#39;</span>
+      </div>
     </div>
-    <div class="time-cell comment"></div>            
+    <div class="time-cell passed">0</div>
   </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
 
   <div class="step-row">
     <div class="step-container" id="0.55">
       <div class="step-ref passed">55</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.status == &#39;IN_ACTIVE&#39;</span>
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[0].assetUrl == &#39;#notnull&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1274,38 +1173,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">56</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.activeFlag == false</span>
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[1].assetUrl == &#39;#notnull&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.57">
-      <div class="step-ref passed">57</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.message == &#39;Account is DeActivated&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1330,10 +1201,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">58</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.mobileNumber == &#39;00959752781355&#39;</span>
+        <span>And</span>&nbsp;<span>match response.accountId == null</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1348,24 +1219,48 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div><div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:62]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:62]</span>
+                <span class="scenario-name">Mobile number belongs to an IN_ACTIVE account</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>200</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:62]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:62]bg"><div>
   
 
   <div class="step-row">
     <div class="step-container">
       <div class="step-ref passed"></div>
       
-      <div class="step-cell comment"># --- Dynamic Fields (must have data) ---</div>
+      <div class="step-cell comment"># 🔥 Debug (to confirm CI is loading config)</div>
     </div>
     <div class="time-cell comment"></div>            
   </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.60">
-      <div class="step-ref passed">60</div>
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.name != null</span>
+        <span>*</span>&nbsp;<span>print &#39;Base URL from config:&#39;, baseUrl</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1383,17 +1278,24 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div><div>
-  
-
+          <div data-parent="[3:62]bg"><div>
   
 
   <div class="step-row">
-    <div class="step-container" id="0.61">
-      <div class="step-ref passed">61</div>
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># ❗ Fallback (prevents CI failure if config not loaded)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.fatherName != null</span>
+        <span>*</span>&nbsp;<span>def baseUrl = baseUrl ? baseUrl : &#39;http://mpay-uat.okdollar.org&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1411,17 +1313,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div><div>
+          <div data-parent="[3:62]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.62">
-      <div class="step-ref passed">62</div>
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.gender != null</span>
+        <span>*</span>&nbsp;<span>url baseUrl</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1449,7 +1351,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">63</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.dateOfBirth != null</span>
+        <span>Given</span>&nbsp;<span>path &#39;/onboarded-users/v1/payplus/mobileNumber/00959752781355&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1477,10 +1379,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">64</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.financialAccountNumber != null</span>
+        <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">190</div>
   </div>
 
    
@@ -1505,35 +1407,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">65</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.createdDateTime != null</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.66">
-      <div class="step-ref passed">66</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.createdAt != null</span>
+        <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1561,10 +1435,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">67</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.updatedAt != null</span>
+        <span>And</span>&nbsp;<span>match response.status == &#39;IN_ACTIVE&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1589,10 +1463,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">68</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.addressInfo.country != null</span>
+        <span>And</span>&nbsp;<span>match response.activeFlag == false</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1617,10 +1491,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">69</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.addressInfo.division != null</span>
+        <span>And</span>&nbsp;<span>match response.message == &#39;Account is DeActivated&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1645,35 +1519,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">70</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.addressInfo.townShip != null</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.71">
-      <div class="step-ref passed">71</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.addressInfo.street != null</span>
+        <span>And</span>&nbsp;<span>match response.mobileNumber == &#39;00959752781355&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1701,7 +1547,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">72</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].idType != null</span>
+        <span>And</span>&nbsp;<span>match response.name == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1729,7 +1575,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">73</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[0].fileId != null</span>
+        <span>And</span>&nbsp;<span>match response.fatherName == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1757,7 +1603,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">74</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[1].fileId != null</span>
+        <span>And</span>&nbsp;<span>match response.gender == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1785,7 +1631,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">75</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.accountId  != null</span>
+        <span>And</span>&nbsp;<span>match response.dateOfBirth == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1813,7 +1659,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">76</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.addressInfo.villageTract  != null</span>
+        <span>And</span>&nbsp;<span>match response.financialAccountNumber == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1841,7 +1687,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">77</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].idNumber  != null</span>
+        <span>And</span>&nbsp;<span>match response.createdDateTime == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1869,7 +1715,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">78</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[0].type  != null</span>
+        <span>And</span>&nbsp;<span>match response.createdAt == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1897,35 +1743,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">79</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[0].assetUrl  != null</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.80">
-      <div class="step-ref passed">80</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[1].type  != null</span>
+        <span>And</span>&nbsp;<span>match response.updatedAt == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1953,7 +1771,35 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">81</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[1].assetUrl  != null</span>
+        <span>And</span>&nbsp;<span>match response.addressInfo.country == &#39;#notnull&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.addressInfo.division == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1971,41 +1817,129 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[4:88]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[4:88]</span>
-                <span class="scenario-name">Mobile number does not exist in system</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>170</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[4:88]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[4:88]bg"><div>
+          <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
+    <div class="step-container" id="0.83">
+      <div class="step-ref passed">83</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url baseUrl</span>
+        <span>And</span>&nbsp;<span>match response.addressInfo.townShip == &#39;#notnull&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.addressInfo.street == &#39;#notnull&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.addressInfo.villageTract == &#39;#notnull&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].idType == &#39;#notnull&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.88">
+      <div class="step-ref passed">88</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].idNumber == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2033,7 +1967,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">89</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;/onboarded-users/v1/payplus/mobileNumber/00959972972978&#39;</span>
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[0].fileId == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2061,10 +1995,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">90</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method GET</span>
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[1].fileId == &#39;#notnull&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">163</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2089,7 +2023,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">91</div>
       
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 404</span>
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[0].type == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2110,24 +2044,45 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div><div>
   
 
+  
+
   <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
+    <div class="step-container" id="0.92">
+      <div class="step-ref passed">92</div>
       
-      <div class="step-cell comment"># --- Static Fields (exact match) ---</div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[1].type == &#39;#notnull&#39;</span>
+      </div>
     </div>
-    <div class="time-cell comment"></div>            
+    <div class="time-cell passed">0</div>
   </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
 
   <div class="step-row">
     <div class="step-container" id="0.93">
       <div class="step-ref passed">93</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.httpStatusCode == 404</span>
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[0].assetUrl == &#39;#notnull&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2152,35 +2107,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">94</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.httpStatus == &#39;NOT_FOUND&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.95">
-      <div class="step-ref passed">95</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.errorCode == &#39;ERROR&#39;</span>
+        <span>And</span>&nbsp;<span>match response.identityDetails[0].kycFiles[1].assetUrl == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2208,154 +2135,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">96</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.errorCodeValue == &#39;ERROR&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.97">
-      <div class="step-ref passed">97</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.errorMessage == &#39;USER_NOT_FOUND&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.98">
-      <div class="step-ref passed">98</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.errorDescription == &#39;UNKNOWN&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.99">
-      <div class="step-ref passed">99</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.xrequestId == null</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># --- Dynamic Fields (must have data) ---</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.101">
-      <div class="step-ref passed">101</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.errorMessageValue != null</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.102">
-      <div class="step-ref passed">102</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.timestamp != null</span>
+        <span>And</span>&nbsp;<span>match response.accountId == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2375,39 +2155,137 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[5:105]">
+          <div class="scenario-heading" id="[4:104]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[5:105]</span>
-                <span class="scenario-name">No mobile number passed in path</span>
+                Scenario: <span>[4:104]</span>
+                <span class="scenario-name">Mobile number does not exist in system</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>156</span>
+              <span>ms:</span>&nbsp;<span>163</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[5:105]bg">
+            <div class="step-container" id="[4:104]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[5:105]bg"><div>
+          <div data-parent="[4:104]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 🔥 Debug (to confirm CI is loading config)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Base URL from config:&#39;, baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:104]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># ❗ Fallback (prevents CI failure if config not loaded)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = baseUrl ? baseUrl : &#39;http://mpay-uat.okdollar.org&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:104]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/onboarded-users/v1/payplus/mobileNumber/00959972972978&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2435,10 +2313,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">106</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;/onboarded-users/v1/payplus/mobileNumber/&#39;</span>
+        <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">157</div>
   </div>
 
    
@@ -2463,34 +2341,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">107</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method PUT</span>
-      </div>
-    </div>
-    <div class="time-cell passed">151</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.108">
-      <div class="step-ref passed">108</div>
-      
-      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 404</span>
       </div>
     </div>
@@ -2512,21 +2362,42 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div><div>
   
 
+  
+
   <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
+    <div class="step-container" id="0.109">
+      <div class="step-ref passed">109</div>
       
-      <div class="step-cell comment"># --- Static Fields (exact match) ---</div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.httpStatusCode == 404</span>
+      </div>
     </div>
-    <div class="time-cell comment"></div>            
+    <div class="time-cell passed">3</div>
   </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
 
   <div class="step-row">
     <div class="step-container" id="0.110">
       <div class="step-ref passed">110</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.httpStatusCode == 404</span>
+        <span>And</span>&nbsp;<span>match response.httpStatus == &#39;NOT_FOUND&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -2554,7 +2425,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">111</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.httpStatus == &#39;NOT_FOUND&#39;</span>
+        <span>And</span>&nbsp;<span>match response.errorCode == &#39;ERROR&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2582,7 +2453,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">112</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.errorCode == &#39;NOT_FOUND&#39;</span>
+        <span>And</span>&nbsp;<span>match response.errorCodeValue == &#39;ERROR&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2610,10 +2481,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">113</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.errorCodeValue == &#39;NoResourceFoundException&#39;</span>
+        <span>And</span>&nbsp;<span>match response.errorMessage == &#39;USER_NOT_FOUND&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2638,7 +2509,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">114</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.errorMessage == &#39;NOT_FOUND&#39;</span>
+        <span>And</span>&nbsp;<span>match response.errorDescription == &#39;UNKNOWN&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2666,6 +2537,436 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">115</div>
       
       <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.xrequestId == null</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.117">
+      <div class="step-ref passed">117</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errorMessageValue == &#39;#notnull&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.118">
+      <div class="step-ref passed">118</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.timestamp == &#39;#notnull&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:122]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:122]</span>
+                <span class="scenario-name">No mobile number passed in path</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>164</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:122]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:122]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 🔥 Debug (to confirm CI is loading config)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Base URL from config:&#39;, baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:122]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># ❗ Fallback (prevents CI failure if config not loaded)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = baseUrl ? baseUrl : &#39;http://mpay-uat.okdollar.org&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:122]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.123">
+      <div class="step-ref passed">123</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/onboarded-users/v1/payplus/mobileNumber/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.124">
+      <div class="step-ref passed">124</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">158</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.125">
+      <div class="step-ref passed">125</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.127">
+      <div class="step-ref passed">127</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.httpStatusCode == 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.128">
+      <div class="step-ref passed">128</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.httpStatus == &#39;NOT_FOUND&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.129">
+      <div class="step-ref passed">129</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errorCode == &#39;NOT_FOUND&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.130">
+      <div class="step-ref passed">130</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errorCodeValue == &#39;NoResourceFoundException&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.131">
+      <div class="step-ref passed">131</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errorMessage == &#39;NOT_FOUND&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.132">
+      <div class="step-ref passed">132</div>
+      
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.errorMessageValue == &#39;org.springframework.web.servlet.resource.NoResourceFoundException&#39;</span>
       </div>
     </div>
@@ -2690,8 +2991,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.116">
-      <div class="step-ref passed">116</div>
+    <div class="step-container" id="0.133">
+      <div class="step-ref passed">133</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.errorDescription == &#39;No static resource v1/payplus/mobileNumber.&#39;</span>
@@ -2718,8 +3019,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.117">
-      <div class="step-ref passed">117</div>
+    <div class="step-container" id="0.134">
+      <div class="step-ref passed">134</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.xrequestId == null</span>
@@ -2743,21 +3044,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div><div>
   
 
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># --- Dynamic Fields (must have data) ---</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
+  
 
   <div class="step-row">
-    <div class="step-container" id="0.119">
-      <div class="step-ref passed">119</div>
+    <div class="step-container" id="0.136">
+      <div class="step-ref passed">136</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.timestamp != null</span>
+        <span>And</span>&nbsp;<span>match response.timestamp == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>

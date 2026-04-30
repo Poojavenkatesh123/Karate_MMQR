@@ -1,16 +1,13 @@
 function fn() {
 
-  var env = karate.env || 'uat';   // default = uat
-  karate.log('Running in environment:', env);
-
   var config = {};
 
-  if (env === 'dev') {
-    config.baseUrl = 'http://dev-url.com';
-  } else if (env === 'uat') {
+  var base = java.lang.System.getenv('BASE_URL');
+
+  if (base) {
+    config.baseUrl = base;
+  } else {
     config.baseUrl = 'http://mpay-uat.okdollar.org';
-  } else if (env === 'prod') {
-    config.baseUrl = 'https://prod-url.com';
   }
 
   karate.log('Base URL:', config.baseUrl);

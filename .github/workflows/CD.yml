@@ -9,11 +9,14 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      ENV: uat   # 👈 change to dev / uat / prod anytime
+      BASE_URL: http://mpay-uat.okdollar.org
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Debug files (VERY IMPORTANT)
+        run: ls -R
 
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -21,10 +24,10 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Build & Run Karate Tests
-        run: mvn clean test -Dkarate.env=${{ env.ENV }}
+      - name: Run Karate Tests
+        run: mvn clean test
 
-      - name: Upload Karate HTML Report
+      - name: Upload Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
