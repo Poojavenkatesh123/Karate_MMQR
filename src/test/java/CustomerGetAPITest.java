@@ -3,7 +3,7 @@ import com.intuit.karate.junit5.Karate;
 class CustomerGetAPITest {
 
     @Karate.Test
-    Karate testCustomerGetAPI() {
-        return Karate.run("classpath:features/CustomerGetAPI.feature");
+    Karate runAllCustomerOnboardTests() {
+        return Karate.run("classpath:features/CustomerOnboard");
     }
 }
