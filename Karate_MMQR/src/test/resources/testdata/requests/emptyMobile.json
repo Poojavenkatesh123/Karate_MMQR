@@ -1,0 +1,38 @@
+{
+  "merchantShortName": "OK Dollar COMPANY",
+  "merchantName": "OK Dollar COMPANY",
+  "merchantShortNameInOtherLan": "OK Dollar ကုမ္ပဏီ",
+  "merchantNameInOtherLan": "OK Dollar ကုမ္ပဏီ",
+  "ids": [
+    {
+      "idType": "IDTP5008",
+      "idNumber": "FB99-147",
+      "kycFiles": [{ "fileId": "fileId", "type": "type", "assetUrl": "assetUrl" }]
+    },
+    {
+      "idType": "IDTP5007",
+      "idNumber": "FB99-2347",
+      "kycFiles": [{ "fileId": "fileId", "type": "type", "assetUrl": "assetUrl" }]
+    }
+  ],
+  "businessName": "Ninjavan-6 merchant4",
+  "businessLanguage": "Ninjavan-6 Merchant",
+  "businessLanguageInAL": "နင်ဂျာဗန်-6 Merchant",
+  "mcc": "0037",
+  "firstName": "U MYA",
+  "surname": "WIN",
+  "firstNameInAL": "ဦးမြ",
+  "surnameInAL": "ဝင်း",
+  "mobileNumber": "",
+  "secondaryMobileNumber": "09123456782",
+  "emailId": "aa123456@gmail.com",
+  "url": "ninjavan2.com.mm",
+  "city": "Yangon",
+  "streetName": "YanAye Street",
+  "cityInAL": "ရန်ကုန်",
+  "streetNameInAL": "ရန်အေလမ်",
+  "houseName": "Building 3",
+  "pinCode": "111111",
+  "flexibleFieldValue": "234234",
+  "terminalId": "terminal_1"
+}

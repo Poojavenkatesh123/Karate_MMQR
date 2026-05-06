@@ -1,0 +1,14 @@
+<configuration>
+
+    <!-- Karate logs -->
+    <logger name="com.intuit.karate" level="WARN"/>
+
+    <!-- Thymeleaf logs (this is what you're seeing) -->
+    <logger name="org.thymeleaf" level="WARN"/>
+
+    <!-- Root level -->
+    <root level="WARN">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>
