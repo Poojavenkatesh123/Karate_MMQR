@@ -1,0 +1,1485 @@
+
+================================================================================
+[2026-05-06 15:14:49.346] Payment type: RI | PACS 8
+================================================================================
+endToEndId      : EndToEndId20260506161448
+currentTimestamp: 2026-05-06T16:14:48+06:30
+HTTP Status     : 200
+TxSts           : ACSC
+
+--- Request body ---
+<FPEnvelope xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.03" xmlns:pacs="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.11">
+    <head:AppHdr>
+        <head:Fr>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7001</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:Fr>
+        <head:To>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7008</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:To>
+        <head:BizMsgIdr>EndToEndId20260506161448</head:BizMsgIdr>
+        <head:MsgDefIdr>pacs.008.001.11</head:MsgDefIdr>
+        <head:CreDt>2026-05-06T16:14:48+06:30</head:CreDt>
+    </head:AppHdr>
+    <pacs:Document>
+        <pacs:FIToFICstmrCdtTrf>
+            <pacs:GrpHdr>
+                <pacs:MsgId>EndToEndId20260506161448</pacs:MsgId>
+                <pacs:CreDtTm>2026-05-06T16:14:48+06:30</pacs:CreDtTm>
+                <pacs:NbOfTxs>1</pacs:NbOfTxs>
+                <pacs:SttlmInf>
+                    <pacs:SttlmMtd>CLRG</pacs:SttlmMtd>
+                    <pacs:ClrSys>
+                        <pacs:Prtry>FP</pacs:Prtry>
+                    </pacs:ClrSys>
+                </pacs:SttlmInf>
+                <pacs:PmtTpInf>
+                    <pacs:LclInstrm>
+                        <pacs:Prtry>P2M</pacs:Prtry>
+                    </pacs:LclInstrm>
+                </pacs:PmtTpInf>
+                <pacs:InstgAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstgAgt>
+                <pacs:InstdAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstdAgt>
+            </pacs:GrpHdr>
+            <pacs:CdtTrfTxInf>
+                <pacs:PmtId>
+                    <pacs:EndToEndId>EndToEndId20260506161448</pacs:EndToEndId>
+                    <pacs:TxId>EndToEndId20260506161448</pacs:TxId>
+                    <pacs:ClrSysRef>EndToEndId20260506161448</pacs:ClrSysRef>
+                </pacs:PmtId>
+                <pacs:IntrBkSttlmAmt Ccy="MMK">104.00</pacs:IntrBkSttlmAmt>
+                <pacs:AccptncDtTm>2026-05-06T16:14:48+06:30</pacs:AccptncDtTm>
+                <pacs:InstdAmt Ccy="MMK">104.00</pacs:InstdAmt>
+                <pacs:ChrgBr>SLEV</pacs:ChrgBr>
+                <pacs:Dbtr>
+                    <pacs:Nm> Sai Nwet</pacs:Nm>
+                    <pacs:PstlAdr>
+                        <pacs:AdrLine>N.A</pacs:AdrLine>
+                    </pacs:PstlAdr>
+                </pacs:Dbtr>
+                <pacs:DbtrAcct>
+                    <pacs:Id>
+                        <pacs:Othr>
+                            <pacs:Id>2234409999999326</pacs:Id>
+                            <pacs:SchmeNm>
+                                <pacs:Prtry>TOKN</pacs:Prtry>
+                            </pacs:SchmeNm>
+                        </pacs:Othr>
+                    </pacs:Id>
+                </pacs:DbtrAcct>
+                <pacs:DbtrAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:DbtrAgt>
+                <pacs:CdtrAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:CdtrAgt>
+                <pacs:Cdtr>
+                    <pacs:Nm>SAMEL</pacs:Nm>
+                </pacs:Cdtr>
+                <pacs:CdtrAcct>
+                    <pacs:Id>
+                        <pacs:Othr>
+                            <pacs:Id>2237038814783982</pacs:Id>
+                            <pacs:SchmeNm>
+                                <pacs:Prtry>MRCT</pacs:Prtry>
+                            </pacs:SchmeNm>
+                        </pacs:Othr>
+                    </pacs:Id>
+                </pacs:CdtrAcct>
+                <pacs:RmtInf>
+                    <pacs:Ustrd>Vicky</pacs:Ustrd>
+                    <pacs:Strd>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID2602</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>10006355</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID52</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>5499</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID54</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>1170.00</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID58</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>MM</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID59</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>SAMEL</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID60</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>Demoso</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID6201</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>12345667978984</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                    </pacs:Strd>
+                </pacs:RmtInf>
+            </pacs:CdtTrfTxInf>
+        </pacs:FIToFICstmrCdtTrf>
+    </pacs:Document>
+</FPEnvelope>
+
+--- Response body ---
+{"FPEnvelope":{"_":{"head:AppHdr":{"head:Fr":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7008"}}}},"head:To":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7001"}}}},"head:BizMsgIdr":"177806068921636101","head:MsgDefIdr":"pacs.002.001.13","head:CreDt":"2026-05-06T16:14:49+06:30"},"pacs:Document":{"pacs:FIToFIPmtStsRpt":{"pacs:GrpHdr":{"pacs:MsgId":"17780606892160061838860363","pacs:CreDtTm":"2026-05-06T16:14:49+06:30","pacs:InstgAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7008"}}},"pacs:InstdAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7001"}}}},"pacs:TxInfAndSts":{"pacs:OrgnlGrpInf":{"pacs:OrgnlMsgId":"EndToEndId20260506161448","pacs:OrgnlMsgNmId":"pacs.008.001.11"},"pacs:OrgnlEndToEndId":"EndToEndId20260506161448","pacs:OrgnlTxId":"EndToEndId20260506161448","pacs:TxSts":"ACSC","pacs:AccptncDtTm":"2026-05-06T16:14:49+06:30","pacs:ClrSysRef":"EndToEndId20260506161448","pacs:OrgnlTxRef":{"pacs:IntrBkSttlmAmt":{"_":"104.00","@":{"Ccy":"MMK"}},"pacs:Amt":{"pacs:InstdAmt":{"_":"104.00","@":{"Ccy":"MMK"}}},"pacs:Dbtr":{"pacs:Pty":{"pacs:Nm":"Sai Nwet","pacs:PstlAdr":{"pacs:AdrLine":"N.A"}}},"pacs:DbtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2234409999999326","pacs:SchmeNm":{"pacs:Prtry":"TOKN"}}}},"pacs:Cdtr":{"pacs:Pty":{"pacs:Nm":"SAMEL"}},"pacs:CdtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2237038814783982","pacs:SchmeNm":{"pacs:Prtry":"MRCT"}}}}}}}}},"@":{"xmlns:head":"urn:iso:std:iso:20022:tech:xsd:head.001.001.03","xmlns:pacs":"urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13"}}}
+
+--------------------------------------------------------------------------------
+[2026-05-06 15:14:51.622] Payment type: RI | PACS 2
+--------------------------------------------------------------------------------
+bizMsgIdr       : BizMsgIdr20260506161451
+endToEndId      : EndToEndId20260506161448
+currentTimestamp: 2026-05-06T16:14:51+06:30
+HTTP Status     : 200
+TxSts           : ACSC
+
+--- Request body ---
+<FPEnvelope xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.03" xmlns:pacs="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13">
+    <head:AppHdr>
+        <head:Fr>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7001</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:Fr>
+        <head:To>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7008</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:To>
+        <head:BizMsgIdr>BizMsgIdr20260506161451</head:BizMsgIdr>
+        <head:MsgDefIdr>pacs.002.001.13</head:MsgDefIdr>
+        <head:CreDt>2026-05-06T16:14:51+06:30</head:CreDt>
+    </head:AppHdr>
+    <pacs:Document>
+        <pacs:FIToFIPmtStsRpt>
+            <pacs:GrpHdr>
+                <pacs:MsgId>BizMsgIdr20260506161451</pacs:MsgId>
+                <pacs:CreDtTm>2026-05-06T16:14:51+06:30</pacs:CreDtTm>
+                <pacs:InstgAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstgAgt>
+                <pacs:InstdAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstdAgt>
+            </pacs:GrpHdr>
+            <pacs:TxInfAndSts>
+                <pacs:OrgnlGrpInf>
+                    <pacs:OrgnlMsgId>EndToEndId20260506161448</pacs:OrgnlMsgId>
+                    <pacs:OrgnlMsgNmId>pacs.008.001.11</pacs:OrgnlMsgNmId>
+                </pacs:OrgnlGrpInf>
+                <pacs:OrgnlEndToEndId>EndToEndId20260506161448</pacs:OrgnlEndToEndId>
+                <pacs:OrgnlTxId>EndToEndId20260506161448</pacs:OrgnlTxId>
+                <pacs:TxSts>ACSC</pacs:TxSts>
+                <pacs:ClrSysRef>EndToEndId20260506161448</pacs:ClrSysRef>
+                <pacs:OrgnlTxRef>
+                    <pacs:IntrBkSttlmAmt Ccy="MMK">104.00</pacs:IntrBkSttlmAmt>
+                    <pacs:Amt>
+                        <pacs:InstdAmt Ccy="MMK">104.00</pacs:InstdAmt>
+                    </pacs:Amt>
+                    <pacs:Dbtr>
+                        <pacs:Pty>
+                            <pacs:Nm> Sai Nwet</pacs:Nm>
+                            <pacs:PstlAdr>
+                                <pacs:AdrLine>N.A</pacs:AdrLine>
+                            </pacs:PstlAdr>
+                        </pacs:Pty>
+                    </pacs:Dbtr>
+                    <pacs:DbtrAcct>
+                        <pacs:Id>
+                            <pacs:Othr>
+                                <pacs:Id>2234409999999326</pacs:Id>
+                                <pacs:SchmeNm>
+                                    <pacs:Prtry>TOKN</pacs:Prtry>
+                                </pacs:SchmeNm>
+                            </pacs:Othr>
+                        </pacs:Id>
+                    </pacs:DbtrAcct>
+                    <pacs:Cdtr>
+                        <pacs:Pty>
+                            <pacs:Nm>SAMEL</pacs:Nm>
+                        </pacs:Pty>
+                    </pacs:Cdtr>
+                    <pacs:CdtrAcct>
+                        <pacs:Id>
+                            <pacs:Othr>
+                                <pacs:Id>2237038814783982</pacs:Id>
+                                <pacs:SchmeNm>
+                                    <pacs:Prtry>MRCT</pacs:Prtry>
+                                </pacs:SchmeNm>
+                            </pacs:Othr>
+                        </pacs:Id>
+                    </pacs:CdtrAcct>
+                </pacs:OrgnlTxRef>
+            </pacs:TxInfAndSts>
+        </pacs:FIToFIPmtStsRpt>
+    </pacs:Document>
+</FPEnvelope>
+
+--- Response body ---
+{"FPEnvelope":{"_":{"head:AppHdr":{"head:Fr":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7008"}}}},"head:To":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7001"}}}},"head:BizMsgIdr":"177806069157281954","head:MsgDefIdr":"pacs.002.001.13","head:CreDt":"2026-05-06T16:14:51+06:30"},"pacs:Document":{"pacs:FIToFIPmtStsRpt":{"pacs:GrpHdr":{"pacs:MsgId":"17780606915728011103087382","pacs:CreDtTm":"2026-05-06T16:14:51+06:30","pacs:InstgAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7008"}}},"pacs:InstdAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7001"}}}},"pacs:TxInfAndSts":{"pacs:OrgnlGrpInf":{"pacs:OrgnlMsgId":"BizMsgIdr20260506161451","pacs:OrgnlMsgNmId":"pacs.002.001.13"},"pacs:OrgnlEndToEndId":"EndToEndId20260506161448","pacs:OrgnlTxId":"EndToEndId20260506161448","pacs:TxSts":"ACSC","pacs:AccptncDtTm":"2026-05-06T16:14:51+06:30","pacs:ClrSysRef":"EndToEndId20260506161448","pacs:OrgnlTxRef":{"pacs:IntrBkSttlmAmt":{"_":"104.00","@":{"Ccy":"MMK"}},"pacs:Amt":{"pacs:InstdAmt":{"_":"104.00","@":{"Ccy":"MMK"}}},"pacs:Dbtr":{"pacs:Pty":{"pacs:Nm":"Sai Nwet","pacs:PstlAdr":{"pacs:AdrLine":"N.A"}}},"pacs:DbtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2234409999999326","pacs:SchmeNm":{"pacs:Prtry":"TOKN"}}}},"pacs:Cdtr":{"pacs:Pty":{"pacs:Nm":"SAMEL"}},"pacs:CdtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2237038814783982","pacs:SchmeNm":{"pacs:Prtry":"MRCT"}}}}}}}}},"@":{"xmlns:head":"urn:iso:std:iso:20022:tech:xsd:head.001.001.03","xmlns:pacs":"urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13"}}}
+
+================================================================================
+[2026-05-06 15:14:52.063] Payment type: EZYNK | PACS 8
+================================================================================
+endToEndId      : EndToEndId20260506161451
+currentTimestamp: 2026-05-06T16:14:51+06:30
+HTTP Status     : 400
+TxSts           : RJCT
+
+--- Request body ---
+<FPEnvelope xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.03" xmlns:pacs="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.11">
+    <head:AppHdr>
+        <head:Fr>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7001</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:Fr>
+        <head:To>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7008</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:To>
+        <head:BizMsgIdr>EndToEndId20260506161451</head:BizMsgIdr>
+        <head:MsgDefIdr>pacs.008.001.11</head:MsgDefIdr>
+        <head:CreDt>2026-05-06T16:14:51+06:30</head:CreDt>
+    </head:AppHdr>
+    <pacs:Document>
+        <pacs:FIToFICstmrCdtTrf>
+            <pacs:GrpHdr>
+                <pacs:MsgId>EndToEndId20260506161451</pacs:MsgId>
+                <pacs:CreDtTm>2026-05-06T16:14:51+06:30</pacs:CreDtTm>
+                <pacs:NbOfTxs>1</pacs:NbOfTxs>
+                <pacs:SttlmInf>
+                    <pacs:SttlmMtd>CLRG</pacs:SttlmMtd>
+                    <pacs:ClrSys>
+                        <pacs:Prtry>FP</pacs:Prtry>
+                    </pacs:ClrSys>
+                </pacs:SttlmInf>
+                <pacs:PmtTpInf>
+                    <pacs:LclInstrm>
+                        <pacs:Prtry>P2M</pacs:Prtry>
+                    </pacs:LclInstrm>
+                </pacs:PmtTpInf>
+                <pacs:InstgAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstgAgt>
+                <pacs:InstdAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstdAgt>
+            </pacs:GrpHdr>
+            <pacs:CdtTrfTxInf>
+                <pacs:PmtId>
+                    <pacs:EndToEndId>EndToEndId20260506161451</pacs:EndToEndId>
+                    <pacs:TxId>EndToEndId20260506161451</pacs:TxId>
+                    <pacs:ClrSysRef>EndToEndId20260506161451</pacs:ClrSysRef>
+                </pacs:PmtId>
+                <pacs:IntrBkSttlmAmt Ccy="MMK">102.00</pacs:IntrBkSttlmAmt>
+                <pacs:AccptncDtTm>2026-05-06T16:14:51+06:30</pacs:AccptncDtTm>
+                <pacs:InstdAmt Ccy="MMK">102.00</pacs:InstdAmt>
+                <pacs:ChrgBr>SLEV</pacs:ChrgBr>
+                <pacs:Dbtr>
+                    <pacs:Nm> Sai Nwet</pacs:Nm>
+                    <pacs:PstlAdr>
+                        <pacs:AdrLine>N.A</pacs:AdrLine>
+                    </pacs:PstlAdr>
+                </pacs:Dbtr>
+                <pacs:DbtrAcct>
+                    <pacs:Id>
+                        <pacs:Othr>
+                            <pacs:Id>2234409999999326</pacs:Id>
+                            <pacs:SchmeNm>
+                                <pacs:Prtry>TOKN</pacs:Prtry>
+                            </pacs:SchmeNm>
+                        </pacs:Othr>
+                    </pacs:Id>
+                </pacs:DbtrAcct>
+                <pacs:DbtrAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:DbtrAgt>
+                <pacs:CdtrAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:CdtrAgt>
+                <pacs:Cdtr>
+                    <pacs:Nm>BUSINESS MAGNET</pacs:Nm>
+                </pacs:Cdtr>
+                <pacs:CdtrAcct>
+                    <pacs:Id>
+                        <pacs:Othr>
+                            <pacs:Id>2237036522955371342522</pacs:Id>
+                            <pacs:SchmeNm>
+                                <pacs:Prtry>MRCT</pacs:Prtry>
+                            </pacs:SchmeNm>
+                        </pacs:Othr>
+                    </pacs:Id>
+                </pacs:CdtrAcct>
+                <pacs:RmtInf>
+                    <pacs:Ustrd>Vicky</pacs:Ustrd>
+                    <pacs:Strd>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID2602</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>10006356</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID52</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>5047</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID54</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>1170.00</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID58</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>MM</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID59</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>BUSINESS MAGNET</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID60</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>Kanpet33let</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID6201</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>12345667978984</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                    </pacs:Strd>
+                </pacs:RmtInf>
+            </pacs:CdtTrfTxInf>
+        </pacs:FIToFICstmrCdtTrf>
+    </pacs:Document>
+</FPEnvelope>
+
+--- Response body ---
+{"FPEnvelope":{"_":{"head:AppHdr":{"head:Fr":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7008"}}}},"head:To":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7001"}}}},"head:BizMsgIdr":"17780606919060113045","head:MsgDefIdr":"pacs.002.001.13","head:CreDt":"2026-05-06T16:14:52+06:30"},"pacs:Document":{"pacs:FIToFIPmtStsRpt":{"pacs:GrpHdr":{"pacs:MsgId":"17780606919064765906","pacs:CreDtTm":"2026-05-06T16:14:52+06:30","pacs:InstgAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7008"}}},"pacs:InstdAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7001"}}}},"pacs:TxInfAndSts":{"pacs:OrgnlGrpInf":{"pacs:OrgnlMsgId":"EndToEndId20260506161451","pacs:OrgnlMsgNmId":"pacs.008.001.11"},"pacs:OrgnlEndToEndId":"EndToEndId20260506161451","pacs:OrgnlTxId":"EndToEndId20260506161451","pacs:TxSts":"RJCT","pacs:StsRsnInf":{"pacs:Orgtr":{"pacs:Id":{"pacs:OrgId":{"pacs:Othr":{"pacs:Id":"BIC"}}}},"pacs:Rsn":{"pacs:Prtry":"MWIF"},"pacs:AddtlInf":"Merchant Account does not exists"},"pacs:AccptncDtTm":"2026-05-06T16:14:52+06:30","pacs:ClrSysRef":"EndToEndId20260506161451","pacs:OrgnlTxRef":{"pacs:IntrBkSttlmAmt":{"_":"102.00","@":{"Ccy":"MMK"}},"pacs:Amt":{"pacs:InstdAmt":{"_":"102.00","@":{"Ccy":"MMK"}}},"pacs:Dbtr":{"pacs:Pty":{"pacs:Nm":"Sai Nwet","pacs:PstlAdr":{"pacs:AdrLine":"N.A"}}},"pacs:DbtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2234409999999326","pacs:SchmeNm":{"pacs:Prtry":"TOKN"}}}},"pacs:Cdtr":{"pacs:Pty":{"pacs:Nm":"BUSINESS MAGNET"}},"pacs:CdtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2237036522955371342522","pacs:SchmeNm":{"pacs:Prtry":"MRCT"}}}}}}}}},"@":{"xmlns:head":"urn:iso:std:iso:20022:tech:xsd:head.001.001.03","xmlns:pacs":"urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13"}}}
+
+--------------------------------------------------------------------------------
+[2026-05-06 15:14:54.294] Payment type: EZYNK | PACS 2
+--------------------------------------------------------------------------------
+bizMsgIdr       : BizMsgIdr20260506161454
+endToEndId      : EndToEndId20260506161451
+currentTimestamp: 2026-05-06T16:14:54+06:30
+HTTP Status     : 400
+TxSts           : RJCT
+
+--- Request body ---
+<FPEnvelope xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.03" xmlns:pacs="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13">
+    <head:AppHdr>
+        <head:Fr>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7001</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:Fr>
+        <head:To>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7008</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:To>
+        <head:BizMsgIdr>BizMsgIdr20260506161454</head:BizMsgIdr>
+        <head:MsgDefIdr>pacs.002.001.13</head:MsgDefIdr>
+        <head:CreDt>2026-05-06T16:14:54+06:30</head:CreDt>
+    </head:AppHdr>
+    <pacs:Document>
+        <pacs:FIToFIPmtStsRpt>
+            <pacs:GrpHdr>
+                <pacs:MsgId>BizMsgIdr20260506161454</pacs:MsgId>
+                <pacs:CreDtTm>2026-05-06T16:14:54+06:30</pacs:CreDtTm>
+                <pacs:InstgAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstgAgt>
+                <pacs:InstdAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstdAgt>
+            </pacs:GrpHdr>
+            <pacs:TxInfAndSts>
+                <pacs:OrgnlGrpInf>
+                    <pacs:OrgnlMsgId>EndToEndId20260506161451</pacs:OrgnlMsgId>
+                    <pacs:OrgnlMsgNmId>pacs.008.001.11</pacs:OrgnlMsgNmId>
+                </pacs:OrgnlGrpInf>
+                <pacs:OrgnlEndToEndId>EndToEndId20260506161451</pacs:OrgnlEndToEndId>
+                <pacs:OrgnlTxId>EndToEndId20260506161451</pacs:OrgnlTxId>
+                <pacs:TxSts>ACSC</pacs:TxSts>
+                <pacs:ClrSysRef>EndToEndId20260506161451</pacs:ClrSysRef>
+                <pacs:OrgnlTxRef>
+                    <pacs:IntrBkSttlmAmt Ccy="MMK">102.00</pacs:IntrBkSttlmAmt>
+                    <pacs:Amt>
+                        <pacs:InstdAmt Ccy="MMK">102.00</pacs:InstdAmt>
+                    </pacs:Amt>
+                    <pacs:Dbtr>
+                        <pacs:Pty>
+                            <pacs:Nm> Sai Nwet</pacs:Nm>
+                            <pacs:PstlAdr>
+                                <pacs:AdrLine>N.A</pacs:AdrLine>
+                            </pacs:PstlAdr>
+                        </pacs:Pty>
+                    </pacs:Dbtr>
+                    <pacs:DbtrAcct>
+                        <pacs:Id>
+                            <pacs:Othr>
+                                <pacs:Id>2234409999999326</pacs:Id>
+                                <pacs:SchmeNm>
+                                    <pacs:Prtry>TOKN</pacs:Prtry>
+                                </pacs:SchmeNm>
+                            </pacs:Othr>
+                        </pacs:Id>
+                    </pacs:DbtrAcct>
+                    <pacs:Cdtr>
+                        <pacs:Pty>
+                            <pacs:Nm>BUSINESS MAGNET</pacs:Nm>
+                        </pacs:Pty>
+                    </pacs:Cdtr>
+                    <pacs:CdtrAcct>
+                        <pacs:Id>
+                            <pacs:Othr>
+                                <pacs:Id>2237036522955371342522</pacs:Id>
+                                <pacs:SchmeNm>
+                                    <pacs:Prtry>MRCT</pacs:Prtry>
+                                </pacs:SchmeNm>
+                            </pacs:Othr>
+                        </pacs:Id>
+                    </pacs:CdtrAcct>
+                </pacs:OrgnlTxRef>
+            </pacs:TxInfAndSts>
+        </pacs:FIToFIPmtStsRpt>
+    </pacs:Document>
+</FPEnvelope>
+
+--- Response body ---
+{"FPEnvelope":{"_":{"head:AppHdr":{"head:Fr":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7008"}}}},"head:To":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7001"}}}},"head:BizMsgIdr":"17780606942475585653","head:MsgDefIdr":"pacs.002.001.13","head:CreDt":"2026-05-06T16:14:54+06:30"},"pacs:Document":{"pacs:FIToFIPmtStsRpt":{"pacs:GrpHdr":{"pacs:MsgId":"17780606942472490299","pacs:CreDtTm":"2026-05-06T16:14:54+06:30","pacs:InstgAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7008"}}},"pacs:InstdAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7001"}}}},"pacs:TxInfAndSts":{"pacs:OrgnlGrpInf":{"pacs:OrgnlMsgId":"BizMsgIdr20260506161454","pacs:OrgnlMsgNmId":"pacs.002.001.13"},"pacs:OrgnlEndToEndId":"EndToEndId20260506161451","pacs:OrgnlTxId":"EndToEndId20260506161451","pacs:TxSts":"RJCT","pacs:StsRsnInf":{"pacs:Orgtr":{"pacs:Id":{"pacs:OrgId":{"pacs:Othr":{"pacs:Id":"BIC"}}}},"pacs:Rsn":{"pacs:Prtry":"MWIF"},"pacs:AddtlInf":"cvc-minLength-valid: Value 'ACSC' with length = '4' is not facet-valid with respect to minLength '1' for type 'Max34Text'.cvc-type.3.1.3: The value 'ACSC' of element 'Document.FIToFIPmtStsRpt.TxInfAndSts.TxSts' is not valid."},"pacs:AccptncDtTm":"2026-05-06T16:14:54+06:30","pacs:ClrSysRef":"EndToEndId20260506161451","pacs:OrgnlTxRef":{"pacs:IntrBkSttlmAmt":{"_":"102.00","@":{"Ccy":"MMK"}},"pacs:Amt":{"pacs:InstdAmt":{"_":"102.00","@":{"Ccy":"MMK"}}},"pacs:Dbtr":{"pacs:Pty":{"pacs:Nm":"Sai Nwet","pacs:PstlAdr":{"pacs:AdrLine":"N.A"}}},"pacs:DbtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2234409999999326","pacs:SchmeNm":{"pacs:Prtry":"TOKN"}}}},"pacs:Cdtr":{"pacs:Pty":{"pacs:Nm":"BUSINESS MAGNET"}},"pacs:CdtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2237036522955371342522","pacs:SchmeNm":{"pacs:Prtry":"MRCT"}}}}}}}}},"@":{"xmlns:head":"urn:iso:std:iso:20022:tech:xsd:head.001.001.03","xmlns:pacs":"urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13"}}}
+
+================================================================================
+[2026-05-06 15:14:54.824] Payment type: STARTHING | PACS 8
+================================================================================
+endToEndId      : EndToEndId20260506161454
+currentTimestamp: 2026-05-06T16:14:54+06:30
+HTTP Status     : 200
+TxSts           : ACSC
+
+--- Request body ---
+<FPEnvelope xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.03" xmlns:pacs="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.11">
+    <head:AppHdr>
+        <head:Fr>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7001</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:Fr>
+        <head:To>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7008</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:To>
+        <head:BizMsgIdr>EndToEndId20260506161454</head:BizMsgIdr>
+        <head:MsgDefIdr>pacs.008.001.11</head:MsgDefIdr>
+        <head:CreDt>2026-05-06T16:14:54+06:30</head:CreDt>
+    </head:AppHdr>
+    <pacs:Document>
+        <pacs:FIToFICstmrCdtTrf>
+            <pacs:GrpHdr>
+                <pacs:MsgId>EndToEndId20260506161454</pacs:MsgId>
+                <pacs:CreDtTm>2026-05-06T16:14:54+06:30</pacs:CreDtTm>
+                <pacs:NbOfTxs>1</pacs:NbOfTxs>
+                <pacs:SttlmInf>
+                    <pacs:SttlmMtd>CLRG</pacs:SttlmMtd>
+                    <pacs:ClrSys>
+                        <pacs:Prtry>FP</pacs:Prtry>
+                    </pacs:ClrSys>
+                </pacs:SttlmInf>
+                <pacs:PmtTpInf>
+                    <pacs:LclInstrm>
+                        <pacs:Prtry>P2M</pacs:Prtry>
+                    </pacs:LclInstrm>
+                </pacs:PmtTpInf>
+                <pacs:InstgAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstgAgt>
+                <pacs:InstdAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstdAgt>
+            </pacs:GrpHdr>
+            <pacs:CdtTrfTxInf>
+                <pacs:PmtId>
+                    <pacs:EndToEndId>EndToEndId20260506161454</pacs:EndToEndId>
+                    <pacs:TxId>EndToEndId20260506161454</pacs:TxId>
+                    <pacs:ClrSysRef>EndToEndId20260506161454</pacs:ClrSysRef>
+                </pacs:PmtId>
+                <pacs:IntrBkSttlmAmt Ccy="MMK">106.00</pacs:IntrBkSttlmAmt>
+                <pacs:AccptncDtTm>2026-05-06T16:14:54+06:30</pacs:AccptncDtTm>
+                <pacs:InstdAmt Ccy="MMK">106.00</pacs:InstdAmt>
+                <pacs:ChrgBr>SLEV</pacs:ChrgBr>
+                <pacs:Dbtr>
+                    <pacs:Nm> Sai Nwet</pacs:Nm>
+                    <pacs:PstlAdr>
+                        <pacs:AdrLine>N.A</pacs:AdrLine>
+                    </pacs:PstlAdr>
+                </pacs:Dbtr>
+                <pacs:DbtrAcct>
+                    <pacs:Id>
+                        <pacs:Othr>
+                            <pacs:Id>2234409999999326</pacs:Id>
+                            <pacs:SchmeNm>
+                                <pacs:Prtry>TOKN</pacs:Prtry>
+                            </pacs:SchmeNm>
+                        </pacs:Othr>
+                    </pacs:Id>
+                </pacs:DbtrAcct>
+                <pacs:DbtrAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:DbtrAgt>
+                <pacs:CdtrAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:CdtrAgt>
+                <pacs:Cdtr>
+                    <pacs:Nm>BUSINESS MAGNET</pacs:Nm>
+                </pacs:Cdtr>
+                <pacs:CdtrAcct>
+                    <pacs:Id>
+                        <pacs:Othr>
+                            <pacs:Id>2237036522955371</pacs:Id>
+                            <pacs:SchmeNm>
+                                <pacs:Prtry>MRCT</pacs:Prtry>
+                            </pacs:SchmeNm>
+                        </pacs:Othr>
+                    </pacs:Id>
+                </pacs:CdtrAcct>
+                <pacs:RmtInf>
+                    <pacs:Ustrd>Vicky</pacs:Ustrd>
+                    <pacs:Strd>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID2602</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>10006356</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID52</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>5047</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID54</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>1170.00</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID58</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>MM</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID59</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>BUSINESS MAGNET</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID60</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>Kanpetlet</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID6201</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>12345667978984</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                    </pacs:Strd>
+                </pacs:RmtInf>
+            </pacs:CdtTrfTxInf>
+        </pacs:FIToFICstmrCdtTrf>
+    </pacs:Document>
+</FPEnvelope>
+
+--- Response body ---
+{"FPEnvelope":{"_":{"head:AppHdr":{"head:Fr":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7008"}}}},"head:To":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7001"}}}},"head:BizMsgIdr":"177806069466665516","head:MsgDefIdr":"pacs.002.001.13","head:CreDt":"2026-05-06T16:14:54+06:30"},"pacs:Document":{"pacs:FIToFIPmtStsRpt":{"pacs:GrpHdr":{"pacs:MsgId":"17780606946663094524666040","pacs:CreDtTm":"2026-05-06T16:14:54+06:30","pacs:InstgAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7008"}}},"pacs:InstdAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7001"}}}},"pacs:TxInfAndSts":{"pacs:OrgnlGrpInf":{"pacs:OrgnlMsgId":"EndToEndId20260506161454","pacs:OrgnlMsgNmId":"pacs.008.001.11"},"pacs:OrgnlEndToEndId":"EndToEndId20260506161454","pacs:OrgnlTxId":"EndToEndId20260506161454","pacs:TxSts":"ACSC","pacs:AccptncDtTm":"2026-05-06T16:14:54+06:30","pacs:ClrSysRef":"EndToEndId20260506161454","pacs:OrgnlTxRef":{"pacs:IntrBkSttlmAmt":{"_":"106.00","@":{"Ccy":"MMK"}},"pacs:Amt":{"pacs:InstdAmt":{"_":"106.00","@":{"Ccy":"MMK"}}},"pacs:Dbtr":{"pacs:Pty":{"pacs:Nm":"Sai Nwet","pacs:PstlAdr":{"pacs:AdrLine":"N.A"}}},"pacs:DbtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2234409999999326","pacs:SchmeNm":{"pacs:Prtry":"TOKN"}}}},"pacs:Cdtr":{"pacs:Pty":{"pacs:Nm":"BUSINESS MAGNET"}},"pacs:CdtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2237036522955371","pacs:SchmeNm":{"pacs:Prtry":"MRCT"}}}}}}}}},"@":{"xmlns:head":"urn:iso:std:iso:20022:tech:xsd:head.001.001.03","xmlns:pacs":"urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13"}}}
+
+--------------------------------------------------------------------------------
+[2026-05-06 15:14:57.144] Payment type: STARTHING | PACS 2
+--------------------------------------------------------------------------------
+bizMsgIdr       : BizMsgIdr20260506161456
+endToEndId      : EndToEndId20260506161454
+currentTimestamp: 2026-05-06T16:14:56+06:30
+HTTP Status     : 200
+TxSts           : ACSC
+
+--- Request body ---
+<FPEnvelope xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.03" xmlns:pacs="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13">
+    <head:AppHdr>
+        <head:Fr>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7001</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:Fr>
+        <head:To>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7008</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:To>
+        <head:BizMsgIdr>BizMsgIdr20260506161456</head:BizMsgIdr>
+        <head:MsgDefIdr>pacs.002.001.13</head:MsgDefIdr>
+        <head:CreDt>2026-05-06T16:14:56+06:30</head:CreDt>
+    </head:AppHdr>
+    <pacs:Document>
+        <pacs:FIToFIPmtStsRpt>
+            <pacs:GrpHdr>
+                <pacs:MsgId>BizMsgIdr20260506161456</pacs:MsgId>
+                <pacs:CreDtTm>2026-05-06T16:14:56+06:30</pacs:CreDtTm>
+                <pacs:InstgAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstgAgt>
+                <pacs:InstdAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstdAgt>
+            </pacs:GrpHdr>
+            <pacs:TxInfAndSts>
+                <pacs:OrgnlGrpInf>
+                    <pacs:OrgnlMsgId>EndToEndId20260506161454</pacs:OrgnlMsgId>
+                    <pacs:OrgnlMsgNmId>pacs.008.001.11</pacs:OrgnlMsgNmId>
+                </pacs:OrgnlGrpInf>
+                <pacs:OrgnlEndToEndId>EndToEndId20260506161454</pacs:OrgnlEndToEndId>
+                <pacs:OrgnlTxId>EndToEndId20260506161454</pacs:OrgnlTxId>
+                <pacs:TxSts>ACSC</pacs:TxSts>
+                <pacs:ClrSysRef>EndToEndId20260506161454</pacs:ClrSysRef>
+                <pacs:OrgnlTxRef>
+                    <pacs:IntrBkSttlmAmt Ccy="MMK">106.00</pacs:IntrBkSttlmAmt>
+                    <pacs:Amt>
+                        <pacs:InstdAmt Ccy="MMK">106.00</pacs:InstdAmt>
+                    </pacs:Amt>
+                    <pacs:Dbtr>
+                        <pacs:Pty>
+                            <pacs:Nm> Sai Nwet</pacs:Nm>
+                            <pacs:PstlAdr>
+                                <pacs:AdrLine>N.A</pacs:AdrLine>
+                            </pacs:PstlAdr>
+                        </pacs:Pty>
+                    </pacs:Dbtr>
+                    <pacs:DbtrAcct>
+                        <pacs:Id>
+                            <pacs:Othr>
+                                <pacs:Id>2234409999999326</pacs:Id>
+                                <pacs:SchmeNm>
+                                    <pacs:Prtry>TOKN</pacs:Prtry>
+                                </pacs:SchmeNm>
+                            </pacs:Othr>
+                        </pacs:Id>
+                    </pacs:DbtrAcct>
+                    <pacs:Cdtr>
+                        <pacs:Pty>
+                            <pacs:Nm>BUSINESS MAGNET</pacs:Nm>
+                        </pacs:Pty>
+                    </pacs:Cdtr>
+                    <pacs:CdtrAcct>
+                        <pacs:Id>
+                            <pacs:Othr>
+                                <pacs:Id>2237036522955371</pacs:Id>
+                                <pacs:SchmeNm>
+                                    <pacs:Prtry>MRCT</pacs:Prtry>
+                                </pacs:SchmeNm>
+                            </pacs:Othr>
+                        </pacs:Id>
+                    </pacs:CdtrAcct>
+                </pacs:OrgnlTxRef>
+            </pacs:TxInfAndSts>
+        </pacs:FIToFIPmtStsRpt>
+    </pacs:Document>
+</FPEnvelope>
+
+--- Response body ---
+{"FPEnvelope":{"_":{"head:AppHdr":{"head:Fr":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7008"}}}},"head:To":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7001"}}}},"head:BizMsgIdr":"177806069709340104","head:MsgDefIdr":"pacs.002.001.13","head:CreDt":"2026-05-06T16:14:57+06:30"},"pacs:Document":{"pacs:FIToFIPmtStsRpt":{"pacs:GrpHdr":{"pacs:MsgId":"17780606970934992931163574","pacs:CreDtTm":"2026-05-06T16:14:57+06:30","pacs:InstgAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7008"}}},"pacs:InstdAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7001"}}}},"pacs:TxInfAndSts":{"pacs:OrgnlGrpInf":{"pacs:OrgnlMsgId":"BizMsgIdr20260506161456","pacs:OrgnlMsgNmId":"pacs.002.001.13"},"pacs:OrgnlEndToEndId":"EndToEndId20260506161454","pacs:OrgnlTxId":"EndToEndId20260506161454","pacs:TxSts":"ACSC","pacs:AccptncDtTm":"2026-05-06T16:14:57+06:30","pacs:ClrSysRef":"EndToEndId20260506161454","pacs:OrgnlTxRef":{"pacs:IntrBkSttlmAmt":{"_":"106.00","@":{"Ccy":"MMK"}},"pacs:Amt":{"pacs:InstdAmt":{"_":"106.00","@":{"Ccy":"MMK"}}},"pacs:Dbtr":{"pacs:Pty":{"pacs:Nm":"Sai Nwet","pacs:PstlAdr":{"pacs:AdrLine":"N.A"}}},"pacs:DbtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2234409999999326","pacs:SchmeNm":{"pacs:Prtry":"TOKN"}}}},"pacs:Cdtr":{"pacs:Pty":{"pacs:Nm":"BUSINESS MAGNET"}},"pacs:CdtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2237036522955371","pacs:SchmeNm":{"pacs:Prtry":"MRCT"}}}}}}}}},"@":{"xmlns:head":"urn:iso:std:iso:20022:tech:xsd:head.001.001.03","xmlns:pacs":"urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13"}}}
+
+================================================================================
+[2026-05-06 15:14:57.607] Payment type: OSM | PACS 8
+================================================================================
+endToEndId      : EndToEndId20260506161457
+currentTimestamp: 2026-05-06T16:14:57+06:30
+HTTP Status     : 200
+TxSts           : ACSC
+
+--- Request body ---
+<FPEnvelope xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.03" xmlns:pacs="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.11">
+    <head:AppHdr>
+        <head:Fr>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7001</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:Fr>
+        <head:To>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7008</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:To>
+        <head:BizMsgIdr>EndToEndId20260506161457</head:BizMsgIdr>
+        <head:MsgDefIdr>pacs.008.001.11</head:MsgDefIdr>
+        <head:CreDt>2026-05-06T16:14:57+06:30</head:CreDt>
+    </head:AppHdr>
+    <pacs:Document>
+        <pacs:FIToFICstmrCdtTrf>
+            <pacs:GrpHdr>
+                <pacs:MsgId>EndToEndId20260506161457</pacs:MsgId>
+                <pacs:CreDtTm>2026-05-06T16:14:57+06:30</pacs:CreDtTm>
+                <pacs:NbOfTxs>1</pacs:NbOfTxs>
+                <pacs:SttlmInf>
+                    <pacs:SttlmMtd>CLRG</pacs:SttlmMtd>
+                    <pacs:ClrSys>
+                        <pacs:Prtry>FP</pacs:Prtry>
+                    </pacs:ClrSys>
+                </pacs:SttlmInf>
+                <pacs:PmtTpInf>
+                    <pacs:LclInstrm>
+                        <pacs:Prtry>P2M</pacs:Prtry>
+                    </pacs:LclInstrm>
+                </pacs:PmtTpInf>
+                <pacs:InstgAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstgAgt>
+                <pacs:InstdAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstdAgt>
+            </pacs:GrpHdr>
+            <pacs:CdtTrfTxInf>
+                <pacs:PmtId>
+                    <pacs:EndToEndId>EndToEndId20260506161457</pacs:EndToEndId>
+                    <pacs:TxId>EndToEndId20260506161457</pacs:TxId>
+                    <pacs:ClrSysRef>EndToEndId20260506161457</pacs:ClrSysRef>
+                </pacs:PmtId>
+                <pacs:IntrBkSttlmAmt Ccy="MMK">102.00</pacs:IntrBkSttlmAmt>
+                <pacs:AccptncDtTm>2026-05-06T16:14:57+06:30</pacs:AccptncDtTm>
+                <pacs:InstdAmt Ccy="MMK">102.00</pacs:InstdAmt>
+                <pacs:ChrgBr>SLEV</pacs:ChrgBr>
+                <pacs:Dbtr>
+                    <pacs:Nm> Sai Nwet</pacs:Nm>
+                    <pacs:PstlAdr>
+                        <pacs:AdrLine>N.A</pacs:AdrLine>
+                    </pacs:PstlAdr>
+                </pacs:Dbtr>
+                <pacs:DbtrAcct>
+                    <pacs:Id>
+                        <pacs:Othr>
+                            <pacs:Id>2234409999999326</pacs:Id>
+                            <pacs:SchmeNm>
+                                <pacs:Prtry>TOKN</pacs:Prtry>
+                            </pacs:SchmeNm>
+                        </pacs:Othr>
+                    </pacs:Id>
+                </pacs:DbtrAcct>
+                <pacs:DbtrAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:DbtrAgt>
+                <pacs:CdtrAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:CdtrAgt>
+                <pacs:Cdtr>
+                    <pacs:Nm>BUSINESS MAGNET</pacs:Nm>
+                </pacs:Cdtr>
+                <pacs:CdtrAcct>
+                    <pacs:Id>
+                        <pacs:Othr>
+                            <pacs:Id>2237036522955371</pacs:Id>
+                            <pacs:SchmeNm>
+                                <pacs:Prtry>MRCT</pacs:Prtry>
+                            </pacs:SchmeNm>
+                        </pacs:Othr>
+                    </pacs:Id>
+                </pacs:CdtrAcct>
+                <pacs:RmtInf>
+                    <pacs:Ustrd>Vicky</pacs:Ustrd>
+                    <pacs:Strd>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID2602</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>10006356</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID52</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>5047</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID54</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>1170.00</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID58</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>MM</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID59</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>BUSINESS MAGNET</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID60</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>Kanpetlet</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID6201</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>12345667978984</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                    </pacs:Strd>
+                </pacs:RmtInf>
+            </pacs:CdtTrfTxInf>
+        </pacs:FIToFICstmrCdtTrf>
+    </pacs:Document>
+</FPEnvelope>
+
+--- Response body ---
+{"FPEnvelope":{"_":{"head:AppHdr":{"head:Fr":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7008"}}}},"head:To":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7001"}}}},"head:BizMsgIdr":"177806069747678801","head:MsgDefIdr":"pacs.002.001.13","head:CreDt":"2026-05-06T16:14:57+06:30"},"pacs:Document":{"pacs:FIToFIPmtStsRpt":{"pacs:GrpHdr":{"pacs:MsgId":"17780606974768959703101833","pacs:CreDtTm":"2026-05-06T16:14:57+06:30","pacs:InstgAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7008"}}},"pacs:InstdAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7001"}}}},"pacs:TxInfAndSts":{"pacs:OrgnlGrpInf":{"pacs:OrgnlMsgId":"EndToEndId20260506161457","pacs:OrgnlMsgNmId":"pacs.008.001.11"},"pacs:OrgnlEndToEndId":"EndToEndId20260506161457","pacs:OrgnlTxId":"EndToEndId20260506161457","pacs:TxSts":"ACSC","pacs:AccptncDtTm":"2026-05-06T16:14:57+06:30","pacs:ClrSysRef":"EndToEndId20260506161457","pacs:OrgnlTxRef":{"pacs:IntrBkSttlmAmt":{"_":"102.00","@":{"Ccy":"MMK"}},"pacs:Amt":{"pacs:InstdAmt":{"_":"102.00","@":{"Ccy":"MMK"}}},"pacs:Dbtr":{"pacs:Pty":{"pacs:Nm":"Sai Nwet","pacs:PstlAdr":{"pacs:AdrLine":"N.A"}}},"pacs:DbtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2234409999999326","pacs:SchmeNm":{"pacs:Prtry":"TOKN"}}}},"pacs:Cdtr":{"pacs:Pty":{"pacs:Nm":"BUSINESS MAGNET"}},"pacs:CdtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2237036522955371","pacs:SchmeNm":{"pacs:Prtry":"MRCT"}}}}}}}}},"@":{"xmlns:head":"urn:iso:std:iso:20022:tech:xsd:head.001.001.03","xmlns:pacs":"urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13"}}}
+
+--------------------------------------------------------------------------------
+[2026-05-06 15:14:59.924] Payment type: OSM | PACS 2
+--------------------------------------------------------------------------------
+bizMsgIdr       : BizMsgIdr20260506161459
+endToEndId      : EndToEndId20260506161457
+currentTimestamp: 2026-05-06T16:14:59+06:30
+HTTP Status     : 200
+TxSts           : ACSC
+
+--- Request body ---
+<FPEnvelope xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.03" xmlns:pacs="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13">
+    <head:AppHdr>
+        <head:Fr>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7001</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:Fr>
+        <head:To>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7008</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:To>
+        <head:BizMsgIdr>BizMsgIdr20260506161459</head:BizMsgIdr>
+        <head:MsgDefIdr>pacs.002.001.13</head:MsgDefIdr>
+        <head:CreDt>2026-05-06T16:14:59+06:30</head:CreDt>
+    </head:AppHdr>
+    <pacs:Document>
+        <pacs:FIToFIPmtStsRpt>
+            <pacs:GrpHdr>
+                <pacs:MsgId>BizMsgIdr20260506161459</pacs:MsgId>
+                <pacs:CreDtTm>2026-05-06T16:14:59+06:30</pacs:CreDtTm>
+                <pacs:InstgAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstgAgt>
+                <pacs:InstdAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstdAgt>
+            </pacs:GrpHdr>
+            <pacs:TxInfAndSts>
+                <pacs:OrgnlGrpInf>
+                    <pacs:OrgnlMsgId>EndToEndId20260506161457</pacs:OrgnlMsgId>
+                    <pacs:OrgnlMsgNmId>pacs.008.001.11</pacs:OrgnlMsgNmId>
+                </pacs:OrgnlGrpInf>
+                <pacs:OrgnlEndToEndId>EndToEndId20260506161457</pacs:OrgnlEndToEndId>
+                <pacs:OrgnlTxId>EndToEndId20260506161457</pacs:OrgnlTxId>
+                <pacs:TxSts>ACSC</pacs:TxSts>
+                <pacs:ClrSysRef>EndToEndId20260506161457</pacs:ClrSysRef>
+                <pacs:OrgnlTxRef>
+                    <pacs:IntrBkSttlmAmt Ccy="MMK">102.00</pacs:IntrBkSttlmAmt>
+                    <pacs:Amt>
+                        <pacs:InstdAmt Ccy="MMK">102.00</pacs:InstdAmt>
+                    </pacs:Amt>
+                    <pacs:Dbtr>
+                        <pacs:Pty>
+                            <pacs:Nm> Sai Nwet</pacs:Nm>
+                            <pacs:PstlAdr>
+                                <pacs:AdrLine>N.A</pacs:AdrLine>
+                            </pacs:PstlAdr>
+                        </pacs:Pty>
+                    </pacs:Dbtr>
+                    <pacs:DbtrAcct>
+                        <pacs:Id>
+                            <pacs:Othr>
+                                <pacs:Id>2234409999999326</pacs:Id>
+                                <pacs:SchmeNm>
+                                    <pacs:Prtry>TOKN</pacs:Prtry>
+                                </pacs:SchmeNm>
+                            </pacs:Othr>
+                        </pacs:Id>
+                    </pacs:DbtrAcct>
+                    <pacs:Cdtr>
+                        <pacs:Pty>
+                            <pacs:Nm>BUSINESS MAGNET</pacs:Nm>
+                        </pacs:Pty>
+                    </pacs:Cdtr>
+                    <pacs:CdtrAcct>
+                        <pacs:Id>
+                            <pacs:Othr>
+                                <pacs:Id>2237036522955371</pacs:Id>
+                                <pacs:SchmeNm>
+                                    <pacs:Prtry>MRCT</pacs:Prtry>
+                                </pacs:SchmeNm>
+                            </pacs:Othr>
+                        </pacs:Id>
+                    </pacs:CdtrAcct>
+                </pacs:OrgnlTxRef>
+            </pacs:TxInfAndSts>
+        </pacs:FIToFIPmtStsRpt>
+    </pacs:Document>
+</FPEnvelope>
+
+--- Response body ---
+{"FPEnvelope":{"_":{"head:AppHdr":{"head:Fr":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7008"}}}},"head:To":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7001"}}}},"head:BizMsgIdr":"177806069987975296","head:MsgDefIdr":"pacs.002.001.13","head:CreDt":"2026-05-06T16:14:59+06:30"},"pacs:Document":{"pacs:FIToFIPmtStsRpt":{"pacs:GrpHdr":{"pacs:MsgId":"17780606998795340511515168","pacs:CreDtTm":"2026-05-06T16:14:59+06:30","pacs:InstgAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7008"}}},"pacs:InstdAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7001"}}}},"pacs:TxInfAndSts":{"pacs:OrgnlGrpInf":{"pacs:OrgnlMsgId":"BizMsgIdr20260506161459","pacs:OrgnlMsgNmId":"pacs.002.001.13"},"pacs:OrgnlEndToEndId":"EndToEndId20260506161457","pacs:OrgnlTxId":"EndToEndId20260506161457","pacs:TxSts":"ACSC","pacs:AccptncDtTm":"2026-05-06T16:14:59+06:30","pacs:ClrSysRef":"EndToEndId20260506161457","pacs:OrgnlTxRef":{"pacs:IntrBkSttlmAmt":{"_":"102.00","@":{"Ccy":"MMK"}},"pacs:Amt":{"pacs:InstdAmt":{"_":"102.00","@":{"Ccy":"MMK"}}},"pacs:Dbtr":{"pacs:Pty":{"pacs:Nm":"Sai Nwet","pacs:PstlAdr":{"pacs:AdrLine":"N.A"}}},"pacs:DbtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2234409999999326","pacs:SchmeNm":{"pacs:Prtry":"TOKN"}}}},"pacs:Cdtr":{"pacs:Pty":{"pacs:Nm":"BUSINESS MAGNET"}},"pacs:CdtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2237036522955371","pacs:SchmeNm":{"pacs:Prtry":"MRCT"}}}}}}}}},"@":{"xmlns:head":"urn:iso:std:iso:20022:tech:xsd:head.001.001.03","xmlns:pacs":"urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13"}}}
+
+================================================================================
+[2026-05-06 15:15:00.312] Payment type: RIOutlet | PACS 8
+================================================================================
+endToEndId      : EndToEndId20260506161459
+currentTimestamp: 2026-05-06T16:14:59+06:30
+HTTP Status     : 200
+TxSts           : ACSC
+
+--- Request body ---
+<FPEnvelope xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.03" xmlns:pacs="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.11">
+    <head:AppHdr>
+        <head:Fr>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7001</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:Fr>
+        <head:To>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7008</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:To>
+        <head:BizMsgIdr>EndToEndId20260506161459</head:BizMsgIdr>
+        <head:MsgDefIdr>pacs.008.001.11</head:MsgDefIdr>
+        <head:CreDt>2026-05-06T16:14:59+06:30</head:CreDt>
+    </head:AppHdr>
+    <pacs:Document>
+        <pacs:FIToFICstmrCdtTrf>
+            <pacs:GrpHdr>
+                <pacs:MsgId>EndToEndId20260506161459</pacs:MsgId>
+                <pacs:CreDtTm>2026-05-06T16:14:59+06:30</pacs:CreDtTm>
+                <pacs:NbOfTxs>1</pacs:NbOfTxs>
+                <pacs:SttlmInf>
+                    <pacs:SttlmMtd>CLRG</pacs:SttlmMtd>
+                    <pacs:ClrSys>
+                        <pacs:Prtry>FP</pacs:Prtry>
+                    </pacs:ClrSys>
+                </pacs:SttlmInf>
+                <pacs:PmtTpInf>
+                    <pacs:LclInstrm>
+                        <pacs:Prtry>P2M</pacs:Prtry>
+                    </pacs:LclInstrm>
+                </pacs:PmtTpInf>
+                <pacs:InstgAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstgAgt>
+                <pacs:InstdAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstdAgt>
+            </pacs:GrpHdr>
+            <pacs:CdtTrfTxInf>
+                <pacs:PmtId>
+                    <pacs:EndToEndId>EndToEndId20260506161459</pacs:EndToEndId>
+                    <pacs:TxId>EndToEndId20260506161459</pacs:TxId>
+                    <pacs:ClrSysRef>EndToEndId20260506161459</pacs:ClrSysRef>
+                </pacs:PmtId>
+                <pacs:IntrBkSttlmAmt Ccy="MMK">105.00</pacs:IntrBkSttlmAmt>
+                <pacs:AccptncDtTm>2026-05-06T16:14:59+06:30</pacs:AccptncDtTm>
+                <pacs:InstdAmt Ccy="MMK">105.00</pacs:InstdAmt>
+                <pacs:ChrgBr>SLEV</pacs:ChrgBr>
+                <pacs:Dbtr>
+                    <pacs:Nm> Sai Nwet</pacs:Nm>
+                    <pacs:PstlAdr>
+                        <pacs:AdrLine>N.A</pacs:AdrLine>
+                    </pacs:PstlAdr>
+                </pacs:Dbtr>
+                <pacs:DbtrAcct>
+                    <pacs:Id>
+                        <pacs:Othr>
+                            <pacs:Id>2234409999999326</pacs:Id>
+                            <pacs:SchmeNm>
+                                <pacs:Prtry>TOKN</pacs:Prtry>
+                            </pacs:SchmeNm>
+                        </pacs:Othr>
+                    </pacs:Id>
+                </pacs:DbtrAcct>
+                <pacs:DbtrAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:DbtrAgt>
+                <pacs:CdtrAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:CdtrAgt>
+                <pacs:Cdtr>
+                    <pacs:Nm>BUSINESS MAGNET</pacs:Nm>
+                </pacs:Cdtr>
+                <pacs:CdtrAcct>
+                    <pacs:Id>
+                        <pacs:Othr>
+                            <pacs:Id>2237036522955371</pacs:Id>
+                            <pacs:SchmeNm>
+                                <pacs:Prtry>MRCT</pacs:Prtry>
+                            </pacs:SchmeNm>
+                        </pacs:Othr>
+                    </pacs:Id>
+                </pacs:CdtrAcct>
+                <pacs:RmtInf>
+                    <pacs:Ustrd>Vicky</pacs:Ustrd>
+                    <pacs:Strd>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID2602</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>10006356</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID52</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>5047</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID54</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>1170.00</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID58</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>MM</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID59</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>BUSINESS MAGNET</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID60</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>Kanpetlet</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                        <pacs:RfrdDocInf>
+                            <pacs:Tp>
+                                <pacs:CdOrPrtry>
+                                    <pacs:Prtry>MMQRID6201</pacs:Prtry>
+                                </pacs:CdOrPrtry>
+                            </pacs:Tp>
+                            <pacs:Nb>12345667978984</pacs:Nb>
+                        </pacs:RfrdDocInf>
+                    </pacs:Strd>
+                </pacs:RmtInf>
+            </pacs:CdtTrfTxInf>
+        </pacs:FIToFICstmrCdtTrf>
+    </pacs:Document>
+</FPEnvelope>
+
+--- Response body ---
+{"FPEnvelope":{"_":{"head:AppHdr":{"head:Fr":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7008"}}}},"head:To":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7001"}}}},"head:BizMsgIdr":"177806070026687317","head:MsgDefIdr":"pacs.002.001.13","head:CreDt":"2026-05-06T16:15:00+06:30"},"pacs:Document":{"pacs:FIToFIPmtStsRpt":{"pacs:GrpHdr":{"pacs:MsgId":"17780607002669886578097025","pacs:CreDtTm":"2026-05-06T16:15:00+06:30","pacs:InstgAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7008"}}},"pacs:InstdAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7001"}}}},"pacs:TxInfAndSts":{"pacs:OrgnlGrpInf":{"pacs:OrgnlMsgId":"EndToEndId20260506161459","pacs:OrgnlMsgNmId":"pacs.008.001.11"},"pacs:OrgnlEndToEndId":"EndToEndId20260506161459","pacs:OrgnlTxId":"EndToEndId20260506161459","pacs:TxSts":"ACSC","pacs:AccptncDtTm":"2026-05-06T16:15:00+06:30","pacs:ClrSysRef":"EndToEndId20260506161459","pacs:OrgnlTxRef":{"pacs:IntrBkSttlmAmt":{"_":"105.00","@":{"Ccy":"MMK"}},"pacs:Amt":{"pacs:InstdAmt":{"_":"105.00","@":{"Ccy":"MMK"}}},"pacs:Dbtr":{"pacs:Pty":{"pacs:Nm":"Sai Nwet","pacs:PstlAdr":{"pacs:AdrLine":"N.A"}}},"pacs:DbtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2234409999999326","pacs:SchmeNm":{"pacs:Prtry":"TOKN"}}}},"pacs:Cdtr":{"pacs:Pty":{"pacs:Nm":"BUSINESS MAGNET"}},"pacs:CdtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2237036522955371","pacs:SchmeNm":{"pacs:Prtry":"MRCT"}}}}}}}}},"@":{"xmlns:head":"urn:iso:std:iso:20022:tech:xsd:head.001.001.03","xmlns:pacs":"urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13"}}}
+
+--------------------------------------------------------------------------------
+[2026-05-06 15:15:02.566] Payment type: RIOutlet | PACS 2
+--------------------------------------------------------------------------------
+bizMsgIdr       : BizMsgIdr20260506161502
+endToEndId      : EndToEndId20260506161459
+currentTimestamp: 2026-05-06T16:15:02+06:30
+HTTP Status     : 200
+TxSts           : ACSC
+
+--- Request body ---
+<FPEnvelope xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.03" xmlns:pacs="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13">
+    <head:AppHdr>
+        <head:Fr>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7001</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:Fr>
+        <head:To>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7008</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:To>
+        <head:BizMsgIdr>BizMsgIdr20260506161502</head:BizMsgIdr>
+        <head:MsgDefIdr>pacs.002.001.13</head:MsgDefIdr>
+        <head:CreDt>2026-05-06T16:15:02+06:30</head:CreDt>
+    </head:AppHdr>
+    <pacs:Document>
+        <pacs:FIToFIPmtStsRpt>
+            <pacs:GrpHdr>
+                <pacs:MsgId>BizMsgIdr20260506161502</pacs:MsgId>
+                <pacs:CreDtTm>2026-05-06T16:15:02+06:30</pacs:CreDtTm>
+                <pacs:InstgAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstgAgt>
+                <pacs:InstdAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstdAgt>
+            </pacs:GrpHdr>
+            <pacs:TxInfAndSts>
+                <pacs:OrgnlGrpInf>
+                    <pacs:OrgnlMsgId>EndToEndId20260506161459</pacs:OrgnlMsgId>
+                    <pacs:OrgnlMsgNmId>pacs.008.001.11</pacs:OrgnlMsgNmId>
+                </pacs:OrgnlGrpInf>
+                <pacs:OrgnlEndToEndId>EndToEndId20260506161459</pacs:OrgnlEndToEndId>
+                <pacs:OrgnlTxId>EndToEndId20260506161459</pacs:OrgnlTxId>
+                <pacs:TxSts>ACSC</pacs:TxSts>
+                <pacs:ClrSysRef>EndToEndId20260506161459</pacs:ClrSysRef>
+                <pacs:OrgnlTxRef>
+                    <pacs:IntrBkSttlmAmt Ccy="MMK">105.00</pacs:IntrBkSttlmAmt>
+                    <pacs:Amt>
+                        <pacs:InstdAmt Ccy="MMK">105.00</pacs:InstdAmt>
+                    </pacs:Amt>
+                    <pacs:Dbtr>
+                        <pacs:Pty>
+                            <pacs:Nm> Sai Nwet</pacs:Nm>
+                            <pacs:PstlAdr>
+                                <pacs:AdrLine>N.A</pacs:AdrLine>
+                            </pacs:PstlAdr>
+                        </pacs:Pty>
+                    </pacs:Dbtr>
+                    <pacs:DbtrAcct>
+                        <pacs:Id>
+                            <pacs:Othr>
+                                <pacs:Id>2234409999999326</pacs:Id>
+                                <pacs:SchmeNm>
+                                    <pacs:Prtry>TOKN</pacs:Prtry>
+                                </pacs:SchmeNm>
+                            </pacs:Othr>
+                        </pacs:Id>
+                    </pacs:DbtrAcct>
+                    <pacs:Cdtr>
+                        <pacs:Pty>
+                            <pacs:Nm>BUSINESS MAGNET</pacs:Nm>
+                        </pacs:Pty>
+                    </pacs:Cdtr>
+                    <pacs:CdtrAcct>
+                        <pacs:Id>
+                            <pacs:Othr>
+                                <pacs:Id>2237036522955371</pacs:Id>
+                                <pacs:SchmeNm>
+                                    <pacs:Prtry>MRCT</pacs:Prtry>
+                                </pacs:SchmeNm>
+                            </pacs:Othr>
+                        </pacs:Id>
+                    </pacs:CdtrAcct>
+                </pacs:OrgnlTxRef>
+            </pacs:TxInfAndSts>
+        </pacs:FIToFIPmtStsRpt>
+    </pacs:Document>
+</FPEnvelope>
+
+--- Response body ---
+{"FPEnvelope":{"_":{"head:AppHdr":{"head:Fr":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7008"}}}},"head:To":{"head:FIId":{"head:FinInstnId":{"head:Othr":{"head:Id":"7001"}}}},"head:BizMsgIdr":"177806070252111830","head:MsgDefIdr":"pacs.002.001.13","head:CreDt":"2026-05-06T16:15:02+06:30"},"pacs:Document":{"pacs:FIToFIPmtStsRpt":{"pacs:GrpHdr":{"pacs:MsgId":"17780607025217756002740349","pacs:CreDtTm":"2026-05-06T16:15:02+06:30","pacs:InstgAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7008"}}},"pacs:InstdAgt":{"pacs:FinInstnId":{"pacs:Othr":{"pacs:Id":"7001"}}}},"pacs:TxInfAndSts":{"pacs:OrgnlGrpInf":{"pacs:OrgnlMsgId":"BizMsgIdr20260506161502","pacs:OrgnlMsgNmId":"pacs.002.001.13"},"pacs:OrgnlEndToEndId":"EndToEndId20260506161459","pacs:OrgnlTxId":"EndToEndId20260506161459","pacs:TxSts":"ACSC","pacs:AccptncDtTm":"2026-05-06T16:15:02+06:30","pacs:ClrSysRef":"EndToEndId20260506161459","pacs:OrgnlTxRef":{"pacs:IntrBkSttlmAmt":{"_":"105.00","@":{"Ccy":"MMK"}},"pacs:Amt":{"pacs:InstdAmt":{"_":"105.00","@":{"Ccy":"MMK"}}},"pacs:Dbtr":{"pacs:Pty":{"pacs:Nm":"Sai Nwet","pacs:PstlAdr":{"pacs:AdrLine":"N.A"}}},"pacs:DbtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2234409999999326","pacs:SchmeNm":{"pacs:Prtry":"TOKN"}}}},"pacs:Cdtr":{"pacs:Pty":{"pacs:Nm":"BUSINESS MAGNET"}},"pacs:CdtrAcct":{"pacs:Id":{"pacs:Othr":{"pacs:Id":"2237036522955371","pacs:SchmeNm":{"pacs:Prtry":"MRCT"}}}}}}}}},"@":{"xmlns:head":"urn:iso:std:iso:20022:tech:xsd:head.001.001.03","xmlns:pacs":"urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13"}}}

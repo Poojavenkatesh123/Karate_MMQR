@@ -1,0 +1,327 @@
+15:14:45.271 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1778060685269
+15:14:45.647 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:45.660 [main] INFO  com.intuit.karate - [print] Base URL: http://mpay-uat.okdollar.org 
+15:14:45.949 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:45.951 [main] INFO  com.intuit.karate - [print] Base URL: http://mpay-uat.okdollar.org 
+15:14:46.173 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:46.175 [main] INFO  com.intuit.karate - [print] Base URL: http://mpay-uat.okdollar.org 
+15:14:46.384 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:46.386 [main] INFO  com.intuit.karate - [print] Base URL: http://mpay-uat.okdollar.org 
+15:14:46.597 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:46.599 [main] INFO  com.intuit.karate - [print] Base URL: http://mpay-uat.okdollar.org 
+15:14:47.056 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 8 (0 remaining) classpath:features/CustomerOnboard/GetUser.feature
+15:14:47.060 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:47.061 [main] INFO  com.intuit.karate - [print] Base URL: http://mpay-uat.okdollar.org 
+15:14:47.304 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:47.305 [main] INFO  com.intuit.karate - [print] Base URL: http://mpay-uat.okdollar.org 
+15:14:47.473 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:47.473 [main] INFO  com.intuit.karate - [print] Base URL: http://mpay-uat.okdollar.org 
+15:14:47.726 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:47.727 [main] INFO  com.intuit.karate - [print] Base URL: http://mpay-uat.okdollar.org 
+15:14:47.973 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 8 (0 remaining) classpath:features/CustomerOnboard/Inactive.feature
+15:14:47.975 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:47.976 [main] INFO  com.intuit.karate - [print] Base URL: http://mpay-uat.okdollar.org 
+15:14:48.160 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:48.160 [main] INFO  com.intuit.karate - [print] Base URL: http://mpay-uat.okdollar.org 
+15:14:48.356 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:48.357 [main] INFO  com.intuit.karate - [print] Base URL: http://mpay-uat.okdollar.org 
+15:14:48.551 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:48.552 [main] INFO  com.intuit.karate - [print] Base URL: http://mpay-uat.okdollar.org 
+15:14:48.831 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 8 (0 remaining) classpath:features/CustomerOnboard/active.feature
+15:14:48.835 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:48.865 [main] INFO  com.intuit.karate - [print] currentTimestamp = 2026-05-06T16:14:48+06:30 
+15:14:48.865 [main] INFO  com.intuit.karate - [print] endToEndId = EndToEndId20260506161448 
+15:14:48.896 [main] INFO  com.intuit.karate - [print] [PACS 8] endToEndId = EndToEndId20260506161448 
+15:14:48.896 [main] INFO  com.intuit.karate - [print] [PACS 8] currentTimestamp = 2026-05-06T16:14:48+06:30 
+15:14:49.351 [main] INFO  com.intuit.karate - [print] [PACS 8] HTTP 200 | TxSts = ACSC 
+15:14:49.353 [main] INFO  com.intuit.karate - [print] [PACS 8] response written to target/karate-logs/responses/pacs8_RI_EndToEndId20260506161448.xml 
+15:14:51.379 [main] INFO  com.intuit.karate - [print] currentTimestamp = 2026-05-06T16:14:51+06:30 
+15:14:51.380 [main] INFO  com.intuit.karate - [print] bizMsgIdr = BizMsgIdr20260506161451 
+15:14:51.626 [main] INFO  com.intuit.karate - [print] [PACS 2] HTTP 200 | TxSts = ACSC 
+15:14:51.630 [main] INFO  com.intuit.karate - [print] [PACS 2] response written to target/karate-logs/responses/pacs2_RI_BizMsgIdr20260506161451.xml 
+15:14:51.632 [main] INFO  com.intuit.karate - [print] [RI] PACS 8 = 200 ACSC | PACS 2 = 200 ACSC 
+15:14:51.637 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:51.647 [main] INFO  com.intuit.karate - [print] currentTimestamp = 2026-05-06T16:14:51+06:30 
+15:14:51.647 [main] INFO  com.intuit.karate - [print] endToEndId = EndToEndId20260506161451 
+15:14:51.651 [main] INFO  com.intuit.karate - [print] [PACS 8] endToEndId = EndToEndId20260506161451 
+15:14:51.651 [main] INFO  com.intuit.karate - [print] [PACS 8] currentTimestamp = 2026-05-06T16:14:51+06:30 
+15:14:52.065 [main] INFO  com.intuit.karate - [print] [PACS 8] HTTP 400 | TxSts = RJCT 
+15:14:52.068 [main] INFO  com.intuit.karate - [print] [PACS 8] response written to target/karate-logs/responses/pacs8_EZYNK_EndToEndId20260506161451.xml 
+15:14:54.089 [main] INFO  com.intuit.karate - [print] currentTimestamp = 2026-05-06T16:14:54+06:30 
+15:14:54.090 [main] INFO  com.intuit.karate - [print] bizMsgIdr = BizMsgIdr20260506161454 
+15:14:54.299 [main] ERROR com.intuit.karate - classpath:features/payments/pacs2.feature:41
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 193, url: http://mpay-uat.okdollar.org/qr-pay/ri/v1/iso20022/callback, response: 
+<FPEnvelope
+        xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.03"
+        xmlns:pacs="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13">
+    <head:AppHdr>
+        <head:Fr>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7008</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:Fr>
+        <head:To>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7001</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:To>
+        <head:BizMsgIdr>17780606942475585653</head:BizMsgIdr>
+        <head:MsgDefIdr>pacs.002.001.13</head:MsgDefIdr>
+        <head:CreDt>2026-05-06T16:14:54+06:30</head:CreDt>
+    </head:AppHdr>
+    <pacs:Document>
+        <pacs:FIToFIPmtStsRpt>
+            <pacs:GrpHdr>
+                <pacs:MsgId>17780606942472490299</pacs:MsgId>
+                <pacs:CreDtTm>2026-05-06T16:14:54+06:30</pacs:CreDtTm>
+                <pacs:InstgAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstgAgt>
+                <pacs:InstdAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstdAgt>
+            </pacs:GrpHdr>
+            <pacs:TxInfAndSts>
+                <pacs:OrgnlGrpInf>
+                    <pacs:OrgnlMsgId>BizMsgIdr20260506161454</pacs:OrgnlMsgId>
+                    <pacs:OrgnlMsgNmId>pacs.002.001.13</pacs:OrgnlMsgNmId>
+                </pacs:OrgnlGrpInf>
+                <pacs:OrgnlEndToEndId>EndToEndId20260506161451</pacs:OrgnlEndToEndId>
+                <pacs:OrgnlTxId>EndToEndId20260506161451</pacs:OrgnlTxId>
+                <pacs:TxSts>RJCT</pacs:TxSts>
+                <pacs:StsRsnInf>
+    <pacs:Orgtr>
+        <pacs:Id>
+            <pacs:OrgId>
+                <pacs:Othr>
+                    <pacs:Id>BIC</pacs:Id>
+                </pacs:Othr>
+            </pacs:OrgId>
+        </pacs:Id>
+    </pacs:Orgtr>
+    <pacs:Rsn>
+        <pacs:Prtry>MWIF</pacs:Prtry>
+    </pacs:Rsn>
+    <pacs:AddtlInf>cvc-minLength-valid: Value 'ACSC' with length = '4' is not facet-valid with respect to minLength '1' for type 'Max34Text'.cvc-type.3.1.3: The value 'ACSC' of element 'Document.FIToFIPmtStsRpt.TxInfAndSts.TxSts' is not valid.</pacs:AddtlInf>
+</pacs:StsRsnInf>
+
+                <pacs:AccptncDtTm>2026-05-06T16:14:54+06:30</pacs:AccptncDtTm>
+                <pacs:ClrSysRef>EndToEndId20260506161451</pacs:ClrSysRef>
+                <pacs:OrgnlTxRef>
+                    <pacs:IntrBkSttlmAmt Ccy="MMK">102.00</pacs:IntrBkSttlmAmt>
+                    <pacs:Amt>
+                        <pacs:InstdAmt Ccy="MMK">102.00</pacs:InstdAmt>
+                    </pacs:Amt>
+                    <pacs:Dbtr>
+                        <pacs:Pty>
+                            <pacs:Nm> Sai Nwet</pacs:Nm>
+                            <pacs:PstlAdr>
+                                <pacs:AdrLine>N.A</pacs:AdrLine>
+                            </pacs:PstlAdr>
+                        </pacs:Pty>
+                    </pacs:Dbtr>
+                    <pacs:DbtrAcct>
+                        <pacs:Id>
+                            <pacs:Othr>
+                                <pacs:Id>2234409999999326</pacs:Id>
+                                <pacs:SchmeNm>
+                                    <pacs:Prtry>TOKN</pacs:Prtry>
+                                </pacs:SchmeNm>
+                            </pacs:Othr>
+                        </pacs:Id>
+                    </pacs:DbtrAcct>
+                    <pacs:Cdtr>
+                        <pacs:Pty>
+                            <pacs:Nm>BUSINESS MAGNET</pacs:Nm>
+                        </pacs:Pty>
+                    </pacs:Cdtr>
+                    <pacs:CdtrAcct>
+                        <pacs:Id>
+                            <pacs:Othr>
+                                <pacs:Id>2237036522955371342522</pacs:Id>
+                                <pacs:SchmeNm>
+                                    <pacs:Prtry>MRCT</pacs:Prtry>
+                                </pacs:SchmeNm>
+                            </pacs:Othr>
+                        </pacs:Id>
+                    </pacs:CdtrAcct>
+                </pacs:OrgnlTxRef>
+            </pacs:TxInfAndSts>
+        </pacs:FIToFIPmtStsRpt>
+    </pacs:Document>
+</FPEnvelope>
+classpath:features/payments/pacs2.feature:41
+15:14:54.301 [main] ERROR com.intuit.karate - classpath:features/payments/payment.feature:17
+* def pacs2Result = call read('classpath:features/payments/pacs2.feature') pacs2Input
+status code was: 400, expected: 200, response time in milliseconds: 193, url: http://mpay-uat.okdollar.org/qr-pay/ri/v1/iso20022/callback, response: 
+<FPEnvelope
+        xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.03"
+        xmlns:pacs="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13">
+    <head:AppHdr>
+        <head:Fr>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7008</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:Fr>
+        <head:To>
+            <head:FIId>
+                <head:FinInstnId>
+                    <head:Othr>
+                        <head:Id>7001</head:Id>
+                    </head:Othr>
+                </head:FinInstnId>
+            </head:FIId>
+        </head:To>
+        <head:BizMsgIdr>17780606942475585653</head:BizMsgIdr>
+        <head:MsgDefIdr>pacs.002.001.13</head:MsgDefIdr>
+        <head:CreDt>2026-05-06T16:14:54+06:30</head:CreDt>
+    </head:AppHdr>
+    <pacs:Document>
+        <pacs:FIToFIPmtStsRpt>
+            <pacs:GrpHdr>
+                <pacs:MsgId>17780606942472490299</pacs:MsgId>
+                <pacs:CreDtTm>2026-05-06T16:14:54+06:30</pacs:CreDtTm>
+                <pacs:InstgAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7008</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstgAgt>
+                <pacs:InstdAgt>
+                    <pacs:FinInstnId>
+                        <pacs:Othr>
+                            <pacs:Id>7001</pacs:Id>
+                        </pacs:Othr>
+                    </pacs:FinInstnId>
+                </pacs:InstdAgt>
+            </pacs:GrpHdr>
+            <pacs:TxInfAndSts>
+                <pacs:OrgnlGrpInf>
+                    <pacs:OrgnlMsgId>BizMsgIdr20260506161454</pacs:OrgnlMsgId>
+                    <pacs:OrgnlMsgNmId>pacs.002.001.13</pacs:OrgnlMsgNmId>
+                </pacs:OrgnlGrpInf>
+                <pacs:OrgnlEndToEndId>EndToEndId20260506161451</pacs:OrgnlEndToEndId>
+                <pacs:OrgnlTxId>EndToEndId20260506161451</pacs:OrgnlTxId>
+                <pacs:TxSts>RJCT</pacs:TxSts>
+                <pacs:StsRsnInf>
+    <pacs:Orgtr>
+        <pacs:Id>
+            <pacs:OrgId>
+                <pacs:Othr>
+                    <pacs:Id>BIC</pacs:Id>
+                </pacs:Othr>
+            </pacs:OrgId>
+        </pacs:Id>
+    </pacs:Orgtr>
+    <pacs:Rsn>
+        <pacs:Prtry>MWIF</pacs:Prtry>
+    </pacs:Rsn>
+    <pacs:AddtlInf>cvc-minLength-valid: Value 'ACSC' with length = '4' is not facet-valid with respect to minLength '1' for type 'Max34Text'.cvc-type.3.1.3: The value 'ACSC' of element 'Document.FIToFIPmtStsRpt.TxInfAndSts.TxSts' is not valid.</pacs:AddtlInf>
+</pacs:StsRsnInf>
+
+                <pacs:AccptncDtTm>2026-05-06T16:14:54+06:30</pacs:AccptncDtTm>
+                <pacs:ClrSysRef>EndToEndId20260506161451</pacs:ClrSysRef>
+                <pacs:OrgnlTxRef>
+                    <pacs:IntrBkSttlmAmt Ccy="MMK">102.00</pacs:IntrBkSttlmAmt>
+                    <pacs:Amt>
+                        <pacs:InstdAmt Ccy="MMK">102.00</pacs:InstdAmt>
+                    </pacs:Amt>
+                    <pacs:Dbtr>
+                        <pacs:Pty>
+                            <pacs:Nm> Sai Nwet</pacs:Nm>
+                            <pacs:PstlAdr>
+                                <pacs:AdrLine>N.A</pacs:AdrLine>
+                            </pacs:PstlAdr>
+                        </pacs:Pty>
+                    </pacs:Dbtr>
+                    <pacs:DbtrAcct>
+                        <pacs:Id>
+                            <pacs:Othr>
+                                <pacs:Id>2234409999999326</pacs:Id>
+                                <pacs:SchmeNm>
+                                    <pacs:Prtry>TOKN</pacs:Prtry>
+                                </pacs:SchmeNm>
+                            </pacs:Othr>
+                        </pacs:Id>
+                    </pacs:DbtrAcct>
+                    <pacs:Cdtr>
+                        <pacs:Pty>
+                            <pacs:Nm>BUSINESS MAGNET</pacs:Nm>
+                        </pacs:Pty>
+                    </pacs:Cdtr>
+                    <pacs:CdtrAcct>
+                        <pacs:Id>
+                            <pacs:Othr>
+                                <pacs:Id>2237036522955371342522</pacs:Id>
+                                <pacs:SchmeNm>
+                                    <pacs:Prtry>MRCT</pacs:Prtry>
+                                </pacs:SchmeNm>
+                            </pacs:Othr>
+                        </pacs:Id>
+                    </pacs:CdtrAcct>
+                </pacs:OrgnlTxRef>
+            </pacs:TxInfAndSts>
+        </pacs:FIToFIPmtStsRpt>
+    </pacs:Document>
+</FPEnvelope>
+classpath:features/payments/pacs2.feature:41
+classpath:features/payments/payment.feature:17
+15:14:54.303 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:54.309 [main] INFO  com.intuit.karate - [print] currentTimestamp = 2026-05-06T16:14:54+06:30 
+15:14:54.309 [main] INFO  com.intuit.karate - [print] endToEndId = EndToEndId20260506161454 
+15:14:54.312 [main] INFO  com.intuit.karate - [print] [PACS 8] endToEndId = EndToEndId20260506161454 
+15:14:54.313 [main] INFO  com.intuit.karate - [print] [PACS 8] currentTimestamp = 2026-05-06T16:14:54+06:30 
+15:14:54.827 [main] INFO  com.intuit.karate - [print] [PACS 8] HTTP 200 | TxSts = ACSC 
+15:14:54.829 [main] INFO  com.intuit.karate - [print] [PACS 8] response written to target/karate-logs/responses/pacs8_STARTHING_EndToEndId20260506161454.xml 
+15:14:56.884 [main] INFO  com.intuit.karate - [print] currentTimestamp = 2026-05-06T16:14:56+06:30 
+15:14:56.884 [main] INFO  com.intuit.karate - [print] bizMsgIdr = BizMsgIdr20260506161456 
+15:14:57.151 [main] INFO  com.intuit.karate - [print] [PACS 2] HTTP 200 | TxSts = ACSC 
+15:14:57.154 [main] INFO  com.intuit.karate - [print] [PACS 2] response written to target/karate-logs/responses/pacs2_STARTHING_BizMsgIdr20260506161456.xml 
+15:14:57.155 [main] INFO  com.intuit.karate - [print] [STARTHING] PACS 8 = 200 ACSC | PACS 2 = 200 ACSC 
+15:14:57.159 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:57.168 [main] INFO  com.intuit.karate - [print] currentTimestamp = 2026-05-06T16:14:57+06:30 
+15:14:57.168 [main] INFO  com.intuit.karate - [print] endToEndId = EndToEndId20260506161457 
+15:14:57.171 [main] INFO  com.intuit.karate - [print] [PACS 8] endToEndId = EndToEndId20260506161457 
+15:14:57.172 [main] INFO  com.intuit.karate - [print] [PACS 8] currentTimestamp = 2026-05-06T16:14:57+06:30 
+15:14:57.627 [main] INFO  com.intuit.karate - [print] [PACS 8] HTTP 200 | TxSts = ACSC 
+15:14:57.629 [main] INFO  com.intuit.karate - [print] [PACS 8] response written to target/karate-logs/responses/pacs8_OSM_EndToEndId20260506161457.xml 
+15:14:59.652 [main] INFO  com.intuit.karate - [print] currentTimestamp = 2026-05-06T16:14:59+06:30 
+15:14:59.652 [main] INFO  com.intuit.karate - [print] bizMsgIdr = BizMsgIdr20260506161459 
+15:14:59.926 [main] INFO  com.intuit.karate - [print] [PACS 2] HTTP 200 | TxSts = ACSC 
+15:14:59.928 [main] INFO  com.intuit.karate - [print] [PACS 2] response written to target/karate-logs/responses/pacs2_OSM_BizMsgIdr20260506161459.xml 
+15:14:59.929 [main] INFO  com.intuit.karate - [print] [OSM] PACS 8 = 200 ACSC | PACS 2 = 200 ACSC 
+15:14:59.934 [main] INFO  com.intuit.karate - Base URL: http://mpay-uat.okdollar.org 
+15:14:59.947 [main] INFO  com.intuit.karate - [print] currentTimestamp = 2026-05-06T16:14:59+06:30 
+15:14:59.947 [main] INFO  com.intuit.karate - [print] endToEndId = EndToEndId20260506161459 
+15:14:59.950 [main] INFO  com.intuit.karate - [print] [PACS 8] endToEndId = EndToEndId20260506161459 
+15:14:59.950 [main] INFO  com.intuit.karate - [print] [PACS 8] currentTimestamp = 2026-05-06T16:14:59+06:30 
+15:15:00.314 [main] INFO  com.intuit.karate - [print] [PACS 8] HTTP 200 | TxSts = ACSC 
+15:15:00.316 [main] INFO  com.intuit.karate - [print] [PACS 8] response written to target/karate-logs/responses/pacs8_RIOutlet_EndToEndId20260506161459.xml 
+15:15:02.344 [main] INFO  com.intuit.karate - [print] currentTimestamp = 2026-05-06T16:15:02+06:30 
+15:15:02.344 [main] INFO  com.intuit.karate - [print] bizMsgIdr = BizMsgIdr20260506161502 
+15:15:02.568 [main] INFO  com.intuit.karate - [print] [PACS 2] HTTP 200 | TxSts = ACSC 
+15:15:02.570 [main] INFO  com.intuit.karate - [print] [PACS 2] response written to target/karate-logs/responses/pacs2_RIOutlet_BizMsgIdr20260506161502.xml 
+15:15:02.571 [main] INFO  com.intuit.karate - [print] [RIOutlet] PACS 8 = 200 ACSC | PACS 2 = 200 ACSC 
+15:15:02.774 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 8 of 8 (0 remaining) classpath:features/payments/payment.feature

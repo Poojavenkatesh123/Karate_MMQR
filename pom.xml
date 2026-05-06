@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
@@ -8,14 +9,17 @@
     <groupId>com.example</groupId>
     <artifactId>karate-bdd</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>17</maven.compiler.release>
         <karate.version>1.4.1</karate.version>
+        <junit.version>5.10.2</junit.version>
+        <karate.options></karate.options>
+        <karate.env></karate.env>
     </properties>
 
-    <!-- ✅ ALL dependencies must be inside this -->
     <dependencies>
 
         <!-- Karate -->
@@ -26,7 +30,15 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Logging (to print 'Hello') -->
+        <!-- JUnit 5 (already pulled by Karate but pinned for clarity) -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Logging -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
@@ -37,8 +49,29 @@
     </dependencies>
 
     <build>
+
+        <!--
+          IMPORTANT: This block tells Maven WHERE to find test resources.
+          Without it, karate-config.js (in src/test/java) is not copied
+          to target/test-classes and Karate cannot find it.
+        -->
+        <testResources>
+            <!-- Copy non-Java files from src/test/java (karate-config.js, request/*.xml, etc.) -->
+            <testResource>
+                <directory>src/test/java</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </testResource>
+            <!-- Copy everything from the standard resources folder (data/*.json, features/**, etc.) -->
+            <testResource>
+                <directory>src/test/resources</directory>
+            </testResource>
+        </testResources>
+
         <plugins>
 
+            <!-- Java compiler -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -48,18 +81,86 @@
                 </configuration>
             </plugin>
 
+            <!-- Surefire: runs JUnit 5 tests, supports karate.options + karate.env -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
                     <systemPropertyVariables>
-                    
+                        <karate.options>${karate.options}</karate.options>
+                        <karate.env>${karate.env}</karate.env>
                     </systemPropertyVariables>
+                    <includes>
+                        <include>**/*Runner.java</include>
+                        <include>**/*Test.java</include>
+                    </includes>
+                    <!-- Don't fail the build on test failures - lets cucumber-reporting still generate -->
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
+            </plugin>
+
+            <!--
+              Masterthought Cucumber HTML report.
+              Reads Karate's cucumber-json output (target/karate-reports/*.json)
+              and produces a rich HTML dashboard at target/cucumber-html-reports/.
+              Run with: mvn verify
+              Open: target/cucumber-html-reports/overview-features.html
+            -->
+            <plugin>
+                <groupId>net.masterthought</groupId>
+                <artifactId>maven-cucumber-reporting</artifactId>
+                <version>5.7.7</version>
+                <configuration>
+                    <projectName>karate-bdd</projectName>
+                    <outputDirectory>${basedir}/target</outputDirectory>
+                    <inputDirectory>${basedir}/target/karate-reports</inputDirectory>
+                    <jsonFiles>
+                        <param>**/*.json</param>
+                    </jsonFiles>
+                    <checkBuildResult>false</checkBuildResult>
+                    <mergeFeaturesById>false</mergeFeaturesById>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>cucumber-html-report</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
         </plugins>
     </build>
+
+    <!--
+      Maven profiles for env-specific runs:
+        mvn clean test -Pdev
+        mvn clean test -Puat
+        mvn clean test -Pprod
+    -->
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <karate.env>dev</karate.env>
+            </properties>
+        </profile>
+        <profile>
+            <id>uat</id>
+            <properties>
+                <karate.env>uat</karate.env>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <karate.env>prod</karate.env>
+            </properties>
+        </profile>
+    </profiles>
 
 </project>

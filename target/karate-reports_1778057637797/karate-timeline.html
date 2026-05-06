@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"features\/CustomerOnboard\/GetUser[1:14]","start":1778057408734,"end":1778057409136,"title":"features\/CustomerOnboard\/GetUser[1:14] 14:20:08.734-14:20:09.136 Verify API returns 200 status"},{"id":2,"group":1,"content":"features\/CustomerOnboard\/GetUser[2:25]","start":1778057409142,"end":1778057409341,"title":"features\/CustomerOnboard\/GetUser[2:25] 14:20:09.142-14:20:09.341 Mobile number belongs to an ACTIVE account"},{"id":3,"group":1,"content":"features\/CustomerOnboard\/GetUser[3:63]","start":1778057409347,"end":1778057409543,"title":"features\/CustomerOnboard\/GetUser[3:63] 14:20:09.347-14:20:09.543 Mobile number belongs to an IN_ACTIVE account"},{"id":4,"group":1,"content":"features\/CustomerOnboard\/GetUser[4:105]","start":1778057409547,"end":1778057409788,"title":"features\/CustomerOnboard\/GetUser[4:105] 14:20:09.547-14:20:09.788 Mobile number does not exist in system"},{"id":5,"group":1,"content":"features\/CustomerOnboard\/GetUser[5:123]","start":1778057409794,"end":1778057409969,"title":"features\/CustomerOnboard\/GetUser[5:123] 14:20:09.794-14:20:09.969 No mobile number passed in path"},{"id":6,"group":1,"content":"features\/CustomerOnboard\/Inactive[1:13]","start":1778057410283,"end":1778057410521,"title":"features\/CustomerOnboard\/Inactive[1:13] 14:20:10.283-14:20:10.521 Verify API returns 200 status"},{"id":7,"group":1,"content":"features\/CustomerOnboard\/Inactive[2:18]","start":1778057410525,"end":1778057410762,"title":"features\/CustomerOnboard\/Inactive[2:18] 14:20:10.525-14:20:10.762 Verify inactive account details for valid mobile number"},{"id":8,"group":1,"content":"features\/CustomerOnboard\/Inactive[3:49]","start":1778057410766,"end":1778057410984,"title":"features\/CustomerOnboard\/Inactive[3:49] 14:20:10.766-14:20:10.984 Verify error response when mobile number does not exist in system"},{"id":9,"group":1,"content":"features\/CustomerOnboard\/Inactive[4:64]","start":1778057410988,"end":1778057411201,"title":"features\/CustomerOnboard\/Inactive[4:64] 14:20:10.988-14:20:11.201 Verify error response when no mobile number is passed in path"},{"id":10,"group":1,"content":"features\/CustomerOnboard\/active[1:15]","start":1778057411294,"end":1778057411465,"title":"features\/CustomerOnboard\/active[1:15] 14:20:11.294-14:20:11.465 Verify API returns 200 status"},{"id":11,"group":1,"content":"features\/CustomerOnboard\/active[2:20]","start":1778057411468,"end":1778057411724,"title":"features\/CustomerOnboard\/active[2:20] 14:20:11.468-14:20:11.724 Verify active account details for valid mobile number"},{"id":12,"group":1,"content":"features\/CustomerOnboard\/active[3:51]","start":1778057411728,"end":1778057411901,"title":"features\/CustomerOnboard\/active[3:51] 14:20:11.728-14:20:11.901 Verify error response when invalid mobile number is passed"},{"id":13,"group":1,"content":"features\/CustomerOnboard\/active[4:65]","start":1778057411904,"end":1778057412072,"title":"features\/CustomerOnboard\/active[4:65] 14:20:11.904-14:20:12.072 Verify error response when no mobile number is passed in path"},{"id":14,"group":1,"content":"features\/payments\/payment[1.1:23]","start":1778057412142,"end":1778057414999,"title":"features\/payments\/payment[1.1:23] 14:20:12.142-14:20:14.999 Validate payment flow for RI"},{"id":15,"group":1,"content":"features\/payments\/payment[1.2:24]","start":1778057415002,"end":1778057417704,"title":"features\/payments\/payment[1.2:24] 14:20:15.002-14:20:17.704 Validate payment flow for EZYNK"},{"id":16,"group":1,"content":"features\/payments\/payment[1.3:25]","start":1778057417707,"end":1778057420403,"title":"features\/payments\/payment[1.3:25] 14:20:17.707-14:20:20.403 Validate payment flow for STARTHING"},{"id":17,"group":1,"content":"features\/payments\/payment[1.4:26]","start":1778057420407,"end":1778057423059,"title":"features\/payments\/payment[1.4:26] 14:20:20.407-14:20:23.059 Validate payment flow for OSM"},{"id":18,"group":1,"content":"features\/payments\/payment[1.5:27]","start":1778057423062,"end":1778057423068,"title":"features\/payments\/payment[1.5:27] 14:20:23.062-14:20:23.068 Validate payment flow for RIOutlet","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

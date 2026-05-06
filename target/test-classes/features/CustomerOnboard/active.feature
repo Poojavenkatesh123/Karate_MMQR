@@ -6,7 +6,7 @@ Feature: Activate User API
     # ✅ SAFE fallback (no ReferenceError)
     * def baseUrl = karate.get('baseUrl') ? karate.get('baseUrl') : 'http://mpay-uat.okdollar.org'
 
-    # ✅ Now it's safe to print
+    # ✅ Now it's safe to
     * print 'Base URL:', baseUrl
 
     * url baseUrl

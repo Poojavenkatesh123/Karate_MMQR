@@ -1,0 +1,2940 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Failures Overview</title>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation"  class="active" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>karate-bdd</td>
+        <td>1</td>
+      <td>06 May 2026, 15:15</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Failures Overview</h2>
+      <p>The following summary displays scenarios that failed.</p>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+        <div class="elements">
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2_1963963837.html">features/payments/payment.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1231514053.html">@payment</a>
+</div>
+
+
+  <span class="lead-duration duration">3.304</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate payment flow for EZYNK</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def data = read('classpath:data/' + fileName)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>15:14:51.637 Base URL: http://mpay-uat.okdollar.org 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def input = data[0]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># PACS 008 Call</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def pacs8Input = karate.merge(input, { type: type })</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def pacs8Result = call read('classpath:features/payments/pacs8.feature') pacs8Input</span>
+
+  <span class="lead-duration duration">0.429</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">features/payments/pacs8.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure headers = ({ &quot;Content-Type&quot;: &quot;application/xml&quot;, &quot;Accept&quot;: &quot;application/xml&quot; })</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># PACS 8 pre-request: generates current_timestamp + EndToEndId</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def pre = call read('classpath:features/helpers/pacs8PreRequest.feature')</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; passed">
+  <span class="keyword indention">&gt;</span>
+  <span class="name">features/helpers/pacs8PreRequest.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def buildPacs8 = function(){ var t = new Date(new Date().getTime() + 60*60*1000); var pad = function(n,len){ var s=''+n; while(s.length&lt;len) s='0'+s; return s; }; var YYYY=t.getFullYear(); var MM=pad(t.getMonth()+1,2); var DD=pad(t.getDate(),2); var HH=pad(t.getHours(),2); var mm=pad(t.getMinutes(),2); var ss=pad(t.getSeconds(),2); var currentTimestamp = YYYY+'-'+MM+'-'+DD+'T'+HH+':'+mm+':'+ss+'+06:30'; var compact = ''+YYYY+MM+DD+HH+mm+ss; var endToEndId = 'EndToEndId'+compact; return { currentTimestamp: currentTimestamp, endToEndId: endToEndId }; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def out = buildPacs8()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def currentTimestamp = out.currentTimestamp</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def endToEndId = out.endToEndId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">print 'currentTimestamp =', currentTimestamp</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>15:14:51.647 [print] currentTimestamp = 2026-05-06T16:14:51+06:30 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">print 'endToEndId =', endToEndId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>15:14:51.647 [print] endToEndId = EndToEndId20260506161451 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def currentTimestamp = pre.currentTimestamp</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def endToEndId       = pre.endToEndId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># The XML still references bizMsgIdr / txId / clrSysRef placeholders.</div>
+          <div class="comment indention"># In the original Postman collection these were commented out and</div>
+          <div class="comment indention"># hardcoded literals were used. Here we set them to the EndToEndId</div>
+          <div class="comment indention"># so each request is self-consistent. Adjust as needed.</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def bizMsgIdr = endToEndId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def txId      = endToEndId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def clrSysRef = endToEndId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def requestPayload = read('classpath:request/pacs8Request.xml')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">replace requestPayload</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>token</td>
+                  <td>value</td>
+              </tr>
+              <tr>
+                  <td>{{EndToEndId}}</td>
+                  <td>endToEndId</td>
+              </tr>
+              <tr>
+                  <td>{{current_timestamp}}</td>
+                  <td>currentTimestamp</td>
+              </tr>
+              <tr>
+                  <td>{{Amount}}</td>
+                  <td>Amount</td>
+              </tr>
+              <tr>
+                  <td>{{TerminalID}}</td>
+                  <td>TerminalID</td>
+              </tr>
+              <tr>
+                  <td>{{BusinessName}}</td>
+                  <td>BusinessName</td>
+              </tr>
+              <tr>
+                  <td>{{city}}</td>
+                  <td>city</td>
+              </tr>
+              <tr>
+                  <td>{{mccCode}}</td>
+                  <td>mccCode</td>
+              </tr>
+              <tr>
+                  <td>{{mPANno}}</td>
+                  <td>mPANno</td>
+              </tr>
+              <tr>
+                  <td>{{refNo}}</td>
+                  <td>refNo</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print '[PACS 8] endToEndId =', endToEndId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>15:14:51.651 [print] [PACS 8] endToEndId = EndToEndId20260506161451 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print '[PACS 8] currentTimestamp =', currentTimestamp</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>15:14:51.651 [print] [PACS 8] currentTimestamp = 2026-05-06T16:14:51+06:30 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'http://mpay-uat.okdollar.org/qr-pay/ri/v1/iso20022/callback'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request requestPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.407</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># &#9472;&#9472;&#9472; Structured payment log (always written, even on failure) &#9472;&#9472;&#9472;</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def logType  = (type == null ? 'unknown' : type)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def logReq   = karate.toString(requestPayload)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def logBody  = (response == null ? '' : karate.toString(response))</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def logTxSts = (function(){ var m = logBody.match(/TxSts[&quot;'\s&gt;:]+([A-Za-z0-9]+)/); return m ? m[1] : 'N/A'; })()</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def logEntry = '\n================================================================================\n[' + nowStamp() + '] Payment type: ' + logType + ' | PACS 8\n================================================================================\nendToEndId      : ' + endToEndId + '\ncurrentTimestamp: ' + currentTimestamp + '\nHTTP Status     : ' + responseStatus + '\nTxSts           : ' + logTxSts + '\n\n--- Request body ---\n' + logReq + '\n\n--- Response body ---\n' + logBody + '\n'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">eval appendPaymentLog(logEntry)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># &#9472;&#9472;&#9472; Validations: relaxed so PACS 2 still runs while backend is rejecting &#9472;&#9472;&#9472;</div>
+          <div class="comment indention"># Then status 200</div>
+          <div class="comment indention"># And match logTxSts == 'ACSC'</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print '[PACS 8] HTTP', responseStatus, '| TxSts =', logTxSts</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>15:14:52.066 [print] [PACS 8] HTTP 400 | TxSts = RJCT 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># &#9472;&#9472;&#9472; Persist response body to a file &#9472;&#9472;&#9472;</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def responseFile = 'karate-logs/responses/pacs8_' + logType + '_' + endToEndId + '.xml'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">eval karate.write(response, responseFile)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print '[PACS 8] response written to target/' + responseFile</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>15:14:52.068 [print] [PACS 8] response written to target/karate-logs/responses/pacs8_EZYNK_EndToEndId20260506161451.xml 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Expose for downstream PACS 2</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def txnId       = endToEndId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def httpStatus  = responseStatus</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def txStatus    = logTxSts</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Wait 2s before firing PACS 2 (gives backend time to settle the PACS 8 txn)</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval java.lang.Thread.sleep(2000)</span>
+
+  <span class="lead-duration duration">2.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># PACS 002 Call (uses txnId from PACS 8 + carries JSON fields for substitution)</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def pacs2Input = karate.merge(input, { txnId: pacs8Result.txnId, type: type })</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def pacs2Result = call read('classpath:features/payments/pacs2.feature') pacs2Input</span>
+
+  <span class="lead-duration duration">0.222</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>status</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>status code was: 400, expected: 200, response time in milliseconds: 193, url: http://mpay-uat.okdollar.org/qr-pay/ri/v1/iso20022/callback, response: 
+&lt;FPEnvelope
+        xmlns:head=&quot;urn:iso:std:iso:20022:tech:xsd:head.001.001.03&quot;
+        xmlns:pacs=&quot;urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13&quot;&gt;
+    &lt;head:AppHdr&gt;
+        &lt;head:Fr&gt;
+            &lt;head:FIId&gt;
+                &lt;head:FinInstnId&gt;
+                    &lt;head:Othr&gt;
+                        &lt;head:Id&gt;7008&lt;/head:Id&gt;
+                    &lt;/head:Othr&gt;
+                &lt;/head:FinInstnId&gt;
+            &lt;/head:FIId&gt;
+        &lt;/head:Fr&gt;
+        &lt;head:To&gt;
+            &lt;head:FIId&gt;
+                &lt;head:FinInstnId&gt;
+                    &lt;head:Othr&gt;
+                        &lt;head:Id&gt;7001&lt;/head:Id&gt;
+                    &lt;/head:Othr&gt;
+                &lt;/head:FinInstnId&gt;
+            &lt;/head:FIId&gt;
+        &lt;/head:To&gt;
+        &lt;head:BizMsgIdr&gt;17780606942475585653&lt;/head:BizMsgIdr&gt;
+        &lt;head:MsgDefIdr&gt;pacs.002.001.13&lt;/head:MsgDefIdr&gt;
+        &lt;head:CreDt&gt;2026-05-06T16:14:54+06:30&lt;/head:CreDt&gt;
+    &lt;/head:AppHdr&gt;
+    &lt;pacs:Document&gt;
+        &lt;pacs:FIToFIPmtStsRpt&gt;
+            &lt;pacs:GrpHdr&gt;
+                &lt;pacs:MsgId&gt;17780606942472490299&lt;/pacs:MsgId&gt;
+                &lt;pacs:CreDtTm&gt;2026-05-06T16:14:54+06:30&lt;/pacs:CreDtTm&gt;
+                &lt;pacs:InstgAgt&gt;
+                    &lt;pacs:FinInstnId&gt;
+                        &lt;pacs:Othr&gt;
+                            &lt;pacs:Id&gt;7008&lt;/pacs:Id&gt;
+                        &lt;/pacs:Othr&gt;
+                    &lt;/pacs:FinInstnId&gt;
+                &lt;/pacs:InstgAgt&gt;
+                &lt;pacs:InstdAgt&gt;
+                    &lt;pacs:FinInstnId&gt;
+                        &lt;pacs:Othr&gt;
+                            &lt;pacs:Id&gt;7001&lt;/pacs:Id&gt;
+                        &lt;/pacs:Othr&gt;
+                    &lt;/pacs:FinInstnId&gt;
+                &lt;/pacs:InstdAgt&gt;
+            &lt;/pacs:GrpHdr&gt;
+            &lt;pacs:TxInfAndSts&gt;
+                &lt;pacs:OrgnlGrpInf&gt;
+                    &lt;pacs:OrgnlMsgId&gt;BizMsgIdr20260506161454&lt;/pacs:OrgnlMsgId&gt;
+                    &lt;pacs:OrgnlMsgNmId&gt;pacs.002.001.13&lt;/pacs:OrgnlMsgNmId&gt;
+                &lt;/pacs:OrgnlGrpInf&gt;
+                &lt;pacs:OrgnlEndToEndId&gt;EndToEndId20260506161451&lt;/pacs:OrgnlEndToEndId&gt;
+                &lt;pacs:OrgnlTxId&gt;EndToEndId20260506161451&lt;/pacs:OrgnlTxId&gt;
+                &lt;pacs:TxSts&gt;RJCT&lt;/pacs:TxSts&gt;
+                &lt;pacs:StsRsnInf&gt;
+    &lt;pacs:Orgtr&gt;
+        &lt;pacs:Id&gt;
+            &lt;pacs:OrgId&gt;
+                &lt;pacs:Othr&gt;
+                    &lt;pacs:Id&gt;BIC&lt;/pacs:Id&gt;
+                &lt;/pacs:Othr&gt;
+            &lt;/pacs:OrgId&gt;
+        &lt;/pacs:Id&gt;
+    &lt;/pacs:Orgtr&gt;
+    &lt;pacs:Rsn&gt;
+        &lt;pacs:Prtry&gt;MWIF&lt;/pacs:Prtry&gt;
+    &lt;/pacs:Rsn&gt;
+    &lt;pacs:AddtlInf&gt;cvc-minLength-valid: Value 'ACSC' with length = '4' is not facet-valid with respect to minLength '1' for type 'Max34Text'.cvc-type.3.1.3: The value 'ACSC' of element 'Document.FIToFIPmtStsRpt.TxInfAndSts.TxSts' is not valid.&lt;/pacs:AddtlInf&gt;
+&lt;/pacs:StsRsnInf&gt;
+
+                &lt;pacs:AccptncDtTm&gt;2026-05-06T16:14:54+06:30&lt;/pacs:AccptncDtTm&gt;
+                &lt;pacs:ClrSysRef&gt;EndToEndId20260506161451&lt;/pacs:ClrSysRef&gt;
+                &lt;pacs:OrgnlTxRef&gt;
+                    &lt;pacs:IntrBkSttlmAmt Ccy=&quot;MMK&quot;&gt;102.00&lt;/pacs:IntrBkSttlmAmt&gt;
+                    &lt;pacs:Amt&gt;
+                        &lt;pacs:InstdAmt Ccy=&quot;MMK&quot;&gt;102.00&lt;/pacs:InstdAmt&gt;
+                    &lt;/pacs:Amt&gt;
+                    &lt;pacs:Dbtr&gt;
+                        &lt;pacs:Pty&gt;
+                            &lt;pacs:Nm&gt; Sai Nwet&lt;/pacs:Nm&gt;
+                            &lt;pacs:PstlAdr&gt;
+                                &lt;pacs:AdrLine&gt;N.A&lt;/pacs:AdrLine&gt;
+                            &lt;/pacs:PstlAdr&gt;
+                        &lt;/pacs:Pty&gt;
+                    &lt;/pacs:Dbtr&gt;
+                    &lt;pacs:DbtrAcct&gt;
+                        &lt;pacs:Id&gt;
+                            &lt;pacs:Othr&gt;
+                                &lt;pacs:Id&gt;2234409999999326&lt;/pacs:Id&gt;
+                                &lt;pacs:SchmeNm&gt;
+                                    &lt;pacs:Prtry&gt;TOKN&lt;/pacs:Prtry&gt;
+                                &lt;/pacs:SchmeNm&gt;
+                            &lt;/pacs:Othr&gt;
+                        &lt;/pacs:Id&gt;
+                    &lt;/pacs:DbtrAcct&gt;
+                    &lt;pacs:Cdtr&gt;
+                        &lt;pacs:Pty&gt;
+                            &lt;pacs:Nm&gt;BUSINESS MAGNET&lt;/pacs:Nm&gt;
+                        &lt;/pacs:Pty&gt;
+                    &lt;/pacs:Cdtr&gt;
+                    &lt;pacs:CdtrAcct&gt;
+                        &lt;pacs:Id&gt;
+                            &lt;pacs:Othr&gt;
+                                &lt;pacs:Id&gt;2237036522955371342522&lt;/pacs:Id&gt;
+                                &lt;pacs:SchmeNm&gt;
+                                    &lt;pacs:Prtry&gt;MRCT&lt;/pacs:Prtry&gt;
+                                &lt;/pacs:SchmeNm&gt;
+                            &lt;/pacs:Othr&gt;
+                        &lt;/pacs:Id&gt;
+                    &lt;/pacs:CdtrAcct&gt;
+                &lt;/pacs:OrgnlTxRef&gt;
+            &lt;/pacs:TxInfAndSts&gt;
+        &lt;/pacs:FIToFIPmtStsRpt&gt;
+    &lt;/pacs:Document&gt;
+&lt;/FPEnvelope&gt;
+classpath:features/payments/pacs2.feature:41
+classpath:features/payments/payment.feature:17</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>15:14:54.301 classpath:features/payments/payment.feature:17
+* def pacs2Result = call read('classpath:features/payments/pacs2.feature') pacs2Input
+status code was: 400, expected: 200, response time in milliseconds: 193, url: http://mpay-uat.okdollar.org/qr-pay/ri/v1/iso20022/callback, response: 
+&lt;FPEnvelope
+        xmlns:head=&quot;urn:iso:std:iso:20022:tech:xsd:head.001.001.03&quot;
+        xmlns:pacs=&quot;urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13&quot;&gt;
+    &lt;head:AppHdr&gt;
+        &lt;head:Fr&gt;
+            &lt;head:FIId&gt;
+                &lt;head:FinInstnId&gt;
+                    &lt;head:Othr&gt;
+                        &lt;head:Id&gt;7008&lt;/head:Id&gt;
+                    &lt;/head:Othr&gt;
+                &lt;/head:FinInstnId&gt;
+            &lt;/head:FIId&gt;
+        &lt;/head:Fr&gt;
+        &lt;head:To&gt;
+            &lt;head:FIId&gt;
+                &lt;head:FinInstnId&gt;
+                    &lt;head:Othr&gt;
+                        &lt;head:Id&gt;7001&lt;/head:Id&gt;
+                    &lt;/head:Othr&gt;
+                &lt;/head:FinInstnId&gt;
+            &lt;/head:FIId&gt;
+        &lt;/head:To&gt;
+        &lt;head:BizMsgIdr&gt;17780606942475585653&lt;/head:BizMsgIdr&gt;
+        &lt;head:MsgDefIdr&gt;pacs.002.001.13&lt;/head:MsgDefIdr&gt;
+        &lt;head:CreDt&gt;2026-05-06T16:14:54+06:30&lt;/head:CreDt&gt;
+    &lt;/head:AppHdr&gt;
+    &lt;pacs:Document&gt;
+        &lt;pacs:FIToFIPmtStsRpt&gt;
+            &lt;pacs:GrpHdr&gt;
+                &lt;pacs:MsgId&gt;17780606942472490299&lt;/pacs:MsgId&gt;
+                &lt;pacs:CreDtTm&gt;2026-05-06T16:14:54+06:30&lt;/pacs:CreDtTm&gt;
+                &lt;pacs:InstgAgt&gt;
+                    &lt;pacs:FinInstnId&gt;
+                        &lt;pacs:Othr&gt;
+                            &lt;pacs:Id&gt;7008&lt;/pacs:Id&gt;
+                        &lt;/pacs:Othr&gt;
+                    &lt;/pacs:FinInstnId&gt;
+                &lt;/pacs:InstgAgt&gt;
+                &lt;pacs:InstdAgt&gt;
+                    &lt;pacs:FinInstnId&gt;
+                        &lt;pacs:Othr&gt;
+                            &lt;pacs:Id&gt;7001&lt;/pacs:Id&gt;
+                        &lt;/pacs:Othr&gt;
+                    &lt;/pacs:FinInstnId&gt;
+                &lt;/pacs:InstdAgt&gt;
+            &lt;/pacs:GrpHdr&gt;
+            &lt;pacs:TxInfAndSts&gt;
+                &lt;pacs:OrgnlGrpInf&gt;
+                    &lt;pacs:OrgnlMsgId&gt;BizMsgIdr20260506161454&lt;/pacs:OrgnlMsgId&gt;
+                    &lt;pacs:OrgnlMsgNmId&gt;pacs.002.001.13&lt;/pacs:OrgnlMsgNmId&gt;
+                &lt;/pacs:OrgnlGrpInf&gt;
+                &lt;pacs:OrgnlEndToEndId&gt;EndToEndId20260506161451&lt;/pacs:OrgnlEndToEndId&gt;
+                &lt;pacs:OrgnlTxId&gt;EndToEndId20260506161451&lt;/pacs:OrgnlTxId&gt;
+                &lt;pacs:TxSts&gt;RJCT&lt;/pacs:TxSts&gt;
+                &lt;pacs:StsRsnInf&gt;
+    &lt;pacs:Orgtr&gt;
+        &lt;pacs:Id&gt;
+            &lt;pacs:OrgId&gt;
+                &lt;pacs:Othr&gt;
+                    &lt;pacs:Id&gt;BIC&lt;/pacs:Id&gt;
+                &lt;/pacs:Othr&gt;
+            &lt;/pacs:OrgId&gt;
+        &lt;/pacs:Id&gt;
+    &lt;/pacs:Orgtr&gt;
+    &lt;pacs:Rsn&gt;
+        &lt;pacs:Prtry&gt;MWIF&lt;/pacs:Prtry&gt;
+    &lt;/pacs:Rsn&gt;
+    &lt;pacs:AddtlInf&gt;cvc-minLength-valid: Value 'ACSC' with length = '4' is not facet-valid with respect to minLength '1' for type 'Max34Text'.cvc-type.3.1.3: The value 'ACSC' of element 'Document.FIToFIPmtStsRpt.TxInfAndSts.TxSts' is not valid.&lt;/pacs:AddtlInf&gt;
+&lt;/pacs:StsRsnInf&gt;
+
+                &lt;pacs:AccptncDtTm&gt;2026-05-06T16:14:54+06:30&lt;/pacs:AccptncDtTm&gt;
+                &lt;pacs:ClrSysRef&gt;EndToEndId20260506161451&lt;/pacs:ClrSysRef&gt;
+                &lt;pacs:OrgnlTxRef&gt;
+                    &lt;pacs:IntrBkSttlmAmt Ccy=&quot;MMK&quot;&gt;102.00&lt;/pacs:IntrBkSttlmAmt&gt;
+                    &lt;pacs:Amt&gt;
+                        &lt;pacs:InstdAmt Ccy=&quot;MMK&quot;&gt;102.00&lt;/pacs:InstdAmt&gt;
+                    &lt;/pacs:Amt&gt;
+                    &lt;pacs:Dbtr&gt;
+                        &lt;pacs:Pty&gt;
+                            &lt;pacs:Nm&gt; Sai Nwet&lt;/pacs:Nm&gt;
+                            &lt;pacs:PstlAdr&gt;
+                                &lt;pacs:AdrLine&gt;N.A&lt;/pacs:AdrLine&gt;
+                            &lt;/pacs:PstlAdr&gt;
+                        &lt;/pacs:Pty&gt;
+                    &lt;/pacs:Dbtr&gt;
+                    &lt;pacs:DbtrAcct&gt;
+                        &lt;pacs:Id&gt;
+                            &lt;pacs:Othr&gt;
+                                &lt;pacs:Id&gt;2234409999999326&lt;/pacs:Id&gt;
+                                &lt;pacs:SchmeNm&gt;
+                                    &lt;pacs:Prtry&gt;TOKN&lt;/pacs:Prtry&gt;
+                                &lt;/pacs:SchmeNm&gt;
+                            &lt;/pacs:Othr&gt;
+                        &lt;/pacs:Id&gt;
+                    &lt;/pacs:DbtrAcct&gt;
+                    &lt;pacs:Cdtr&gt;
+                        &lt;pacs:Pty&gt;
+                            &lt;pacs:Nm&gt;BUSINESS MAGNET&lt;/pacs:Nm&gt;
+                        &lt;/pacs:Pty&gt;
+                    &lt;/pacs:Cdtr&gt;
+                    &lt;pacs:CdtrAcct&gt;
+                        &lt;pacs:Id&gt;
+                            &lt;pacs:Othr&gt;
+                                &lt;pacs:Id&gt;2237036522955371342522&lt;/pacs:Id&gt;
+                                &lt;pacs:SchmeNm&gt;
+                                    &lt;pacs:Prtry&gt;MRCT&lt;/pacs:Prtry&gt;
+                                &lt;/pacs:SchmeNm&gt;
+                            &lt;/pacs:Othr&gt;
+                        &lt;/pacs:Id&gt;
+                    &lt;/pacs:CdtrAcct&gt;
+                &lt;/pacs:OrgnlTxRef&gt;
+            &lt;/pacs:TxInfAndSts&gt;
+        &lt;/pacs:FIToFIPmtStsRpt&gt;
+    &lt;/pacs:Document&gt;
+&lt;/FPEnvelope&gt;
+classpath:features/payments/pacs2.feature:41
+classpath:features/payments/payment.feature:17
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">features/payments/pacs2.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">configure headers = { 'Content-Type': 'application/xml', 'Accept': 'application/xml' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># PACS 2 pre-request: generates current_timestamp + BizMsgIdr (with ns suffix)</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def pre = call read('classpath:features/helpers/pacs2PreRequest.feature')</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; passed">
+  <span class="keyword indention">&gt;</span>
+  <span class="name">features/helpers/pacs2PreRequest.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def buildPacs2 = function(){ var t = new Date(new Date().getTime() + 60*60*1000); var pad = function(n,len){ var s=''+n; while(s.length&lt;len) s='0'+s; return s; }; var YYYY=t.getFullYear(); var MM=pad(t.getMonth()+1,2); var DD=pad(t.getDate(),2); var HH=pad(t.getHours(),2); var mm=pad(t.getMinutes(),2); var ss=pad(t.getSeconds(),2); var currentTimestamp = YYYY+'-'+MM+'-'+DD+'T'+HH+':'+mm+':'+ss+'+06:30'; var compact = ''+YYYY+MM+DD+HH+mm+ss; var bizMsgIdr = 'BizMsgIdr'+compact; return { currentTimestamp: currentTimestamp, bizMsgIdr: bizMsgIdr }; }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def out = buildPacs2()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def currentTimestamp = out.currentTimestamp</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">def bizMsgIdr = out.bizMsgIdr</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">print 'currentTimestamp =', currentTimestamp</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>15:14:54.090 [print] currentTimestamp = 2026-05-06T16:14:54+06:30 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt;&amp;gt; * passed">
+  <span class="keyword indention">&gt;&gt; *</span>
+  <span class="name">print 'bizMsgIdr =', bizMsgIdr</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>15:14:54.090 [print] bizMsgIdr = BizMsgIdr20260506161454 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def currentTimestamp = pre.currentTimestamp</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def bizMsgIdr        = pre.bizMsgIdr</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># The original transaction id (from PACS 8) drives the OrgnlEndToEndId,</div>
+          <div class="comment indention"># OrgnlMsgId, OrgnlTxId and ClrSysRef placeholders in the XML</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def endToEndId = txnId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def requestPayload = read('classpath:request/pacs2Request.xml')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">replace requestPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>token</td>
+                  <td>value</td>
+              </tr>
+              <tr>
+                  <td>{{EndToEndId}}</td>
+                  <td>endToEndId</td>
+              </tr>
+              <tr>
+                  <td>{{BizMsgIdr}}</td>
+                  <td>bizMsgIdr</td>
+              </tr>
+              <tr>
+                  <td>{{current_timestamp}}</td>
+                  <td>currentTimestamp</td>
+              </tr>
+              <tr>
+                  <td>{{Amount}}</td>
+                  <td>Amount</td>
+              </tr>
+              <tr>
+                  <td>{{BusinessName}}</td>
+                  <td>BusinessName</td>
+              </tr>
+              <tr>
+                  <td>{{mPANno}}</td>
+                  <td>mPANno</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'http://mpay-uat.okdollar.org/qr-pay/ri/v1/iso20022/callback'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request requestPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.196</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># &#9472;&#9472;&#9472; Structured payment log (always written, even on failure) &#9472;&#9472;&#9472;</div>
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def logType  = (type == null ? 'unknown' : type)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def logReq   = karate.toString(requestPayload)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def logBody  = (response == null ? '' : karate.toString(response))</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def logTxSts = (function(){ var m = logBody.match(/TxSts[&quot;'\s&gt;:]+([A-Za-z0-9]+)/); return m ? m[1] : 'N/A'; })()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def logEntry = '\n--------------------------------------------------------------------------------\n[' + nowStamp() + '] Payment type: ' + logType + ' | PACS 2\n--------------------------------------------------------------------------------\nbizMsgIdr       : ' + bizMsgIdr + '\nendToEndId      : ' + endToEndId + '\ncurrentTimestamp: ' + currentTimestamp + '\nHTTP Status     : ' + responseStatus + '\nTxSts           : ' + logTxSts + '\n\n--- Request body ---\n' + logReq + '\n\n--- Response body ---\n' + logBody + '\n'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">eval appendPaymentLog(logEntry)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># &#9472;&#9472;&#9472; Validations: HTTP status + payment status &#9472;&#9472;&#9472;</div>
+
+
+<div class="brief step-name-&amp;gt; Then failed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-14">
+          <a>status</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details  in ">
+        <pre>status code was: 400, expected: 200, response time in milliseconds: 193, url: http://mpay-uat.okdollar.org/qr-pay/ri/v1/iso20022/callback, response: 
+&lt;FPEnvelope
+        xmlns:head=&quot;urn:iso:std:iso:20022:tech:xsd:head.001.001.03&quot;
+        xmlns:pacs=&quot;urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13&quot;&gt;
+    &lt;head:AppHdr&gt;
+        &lt;head:Fr&gt;
+            &lt;head:FIId&gt;
+                &lt;head:FinInstnId&gt;
+                    &lt;head:Othr&gt;
+                        &lt;head:Id&gt;7008&lt;/head:Id&gt;
+                    &lt;/head:Othr&gt;
+                &lt;/head:FinInstnId&gt;
+            &lt;/head:FIId&gt;
+        &lt;/head:Fr&gt;
+        &lt;head:To&gt;
+            &lt;head:FIId&gt;
+                &lt;head:FinInstnId&gt;
+                    &lt;head:Othr&gt;
+                        &lt;head:Id&gt;7001&lt;/head:Id&gt;
+                    &lt;/head:Othr&gt;
+                &lt;/head:FinInstnId&gt;
+            &lt;/head:FIId&gt;
+        &lt;/head:To&gt;
+        &lt;head:BizMsgIdr&gt;17780606942475585653&lt;/head:BizMsgIdr&gt;
+        &lt;head:MsgDefIdr&gt;pacs.002.001.13&lt;/head:MsgDefIdr&gt;
+        &lt;head:CreDt&gt;2026-05-06T16:14:54+06:30&lt;/head:CreDt&gt;
+    &lt;/head:AppHdr&gt;
+    &lt;pacs:Document&gt;
+        &lt;pacs:FIToFIPmtStsRpt&gt;
+            &lt;pacs:GrpHdr&gt;
+                &lt;pacs:MsgId&gt;17780606942472490299&lt;/pacs:MsgId&gt;
+                &lt;pacs:CreDtTm&gt;2026-05-06T16:14:54+06:30&lt;/pacs:CreDtTm&gt;
+                &lt;pacs:InstgAgt&gt;
+                    &lt;pacs:FinInstnId&gt;
+                        &lt;pacs:Othr&gt;
+                            &lt;pacs:Id&gt;7008&lt;/pacs:Id&gt;
+                        &lt;/pacs:Othr&gt;
+                    &lt;/pacs:FinInstnId&gt;
+                &lt;/pacs:InstgAgt&gt;
+                &lt;pacs:InstdAgt&gt;
+                    &lt;pacs:FinInstnId&gt;
+                        &lt;pacs:Othr&gt;
+                            &lt;pacs:Id&gt;7001&lt;/pacs:Id&gt;
+                        &lt;/pacs:Othr&gt;
+                    &lt;/pacs:FinInstnId&gt;
+                &lt;/pacs:InstdAgt&gt;
+            &lt;/pacs:GrpHdr&gt;
+            &lt;pacs:TxInfAndSts&gt;
+                &lt;pacs:OrgnlGrpInf&gt;
+                    &lt;pacs:OrgnlMsgId&gt;BizMsgIdr20260506161454&lt;/pacs:OrgnlMsgId&gt;
+                    &lt;pacs:OrgnlMsgNmId&gt;pacs.002.001.13&lt;/pacs:OrgnlMsgNmId&gt;
+                &lt;/pacs:OrgnlGrpInf&gt;
+                &lt;pacs:OrgnlEndToEndId&gt;EndToEndId20260506161451&lt;/pacs:OrgnlEndToEndId&gt;
+                &lt;pacs:OrgnlTxId&gt;EndToEndId20260506161451&lt;/pacs:OrgnlTxId&gt;
+                &lt;pacs:TxSts&gt;RJCT&lt;/pacs:TxSts&gt;
+                &lt;pacs:StsRsnInf&gt;
+    &lt;pacs:Orgtr&gt;
+        &lt;pacs:Id&gt;
+            &lt;pacs:OrgId&gt;
+                &lt;pacs:Othr&gt;
+                    &lt;pacs:Id&gt;BIC&lt;/pacs:Id&gt;
+                &lt;/pacs:Othr&gt;
+            &lt;/pacs:OrgId&gt;
+        &lt;/pacs:Id&gt;
+    &lt;/pacs:Orgtr&gt;
+    &lt;pacs:Rsn&gt;
+        &lt;pacs:Prtry&gt;MWIF&lt;/pacs:Prtry&gt;
+    &lt;/pacs:Rsn&gt;
+    &lt;pacs:AddtlInf&gt;cvc-minLength-valid: Value 'ACSC' with length = '4' is not facet-valid with respect to minLength '1' for type 'Max34Text'.cvc-type.3.1.3: The value 'ACSC' of element 'Document.FIToFIPmtStsRpt.TxInfAndSts.TxSts' is not valid.&lt;/pacs:AddtlInf&gt;
+&lt;/pacs:StsRsnInf&gt;
+
+                &lt;pacs:AccptncDtTm&gt;2026-05-06T16:14:54+06:30&lt;/pacs:AccptncDtTm&gt;
+                &lt;pacs:ClrSysRef&gt;EndToEndId20260506161451&lt;/pacs:ClrSysRef&gt;
+                &lt;pacs:OrgnlTxRef&gt;
+                    &lt;pacs:IntrBkSttlmAmt Ccy=&quot;MMK&quot;&gt;102.00&lt;/pacs:IntrBkSttlmAmt&gt;
+                    &lt;pacs:Amt&gt;
+                        &lt;pacs:InstdAmt Ccy=&quot;MMK&quot;&gt;102.00&lt;/pacs:InstdAmt&gt;
+                    &lt;/pacs:Amt&gt;
+                    &lt;pacs:Dbtr&gt;
+                        &lt;pacs:Pty&gt;
+                            &lt;pacs:Nm&gt; Sai Nwet&lt;/pacs:Nm&gt;
+                            &lt;pacs:PstlAdr&gt;
+                                &lt;pacs:AdrLine&gt;N.A&lt;/pacs:AdrLine&gt;
+                            &lt;/pacs:PstlAdr&gt;
+                        &lt;/pacs:Pty&gt;
+                    &lt;/pacs:Dbtr&gt;
+                    &lt;pacs:DbtrAcct&gt;
+                        &lt;pacs:Id&gt;
+                            &lt;pacs:Othr&gt;
+                                &lt;pacs:Id&gt;2234409999999326&lt;/pacs:Id&gt;
+                                &lt;pacs:SchmeNm&gt;
+                                    &lt;pacs:Prtry&gt;TOKN&lt;/pacs:Prtry&gt;
+                                &lt;/pacs:SchmeNm&gt;
+                            &lt;/pacs:Othr&gt;
+                        &lt;/pacs:Id&gt;
+                    &lt;/pacs:DbtrAcct&gt;
+                    &lt;pacs:Cdtr&gt;
+                        &lt;pacs:Pty&gt;
+                            &lt;pacs:Nm&gt;BUSINESS MAGNET&lt;/pacs:Nm&gt;
+                        &lt;/pacs:Pty&gt;
+                    &lt;/pacs:Cdtr&gt;
+                    &lt;pacs:CdtrAcct&gt;
+                        &lt;pacs:Id&gt;
+                            &lt;pacs:Othr&gt;
+                                &lt;pacs:Id&gt;2237036522955371342522&lt;/pacs:Id&gt;
+                                &lt;pacs:SchmeNm&gt;
+                                    &lt;pacs:Prtry&gt;MRCT&lt;/pacs:Prtry&gt;
+                                &lt;/pacs:SchmeNm&gt;
+                            &lt;/pacs:Othr&gt;
+                        &lt;/pacs:Id&gt;
+                    &lt;/pacs:CdtrAcct&gt;
+                &lt;/pacs:OrgnlTxRef&gt;
+            &lt;/pacs:TxInfAndSts&gt;
+        &lt;/pacs:FIToFIPmtStsRpt&gt;
+    &lt;/pacs:Document&gt;
+&lt;/FPEnvelope&gt;
+classpath:features/payments/pacs2.feature:41</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>15:14:54.299 classpath:features/payments/pacs2.feature:41
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 193, url: http://mpay-uat.okdollar.org/qr-pay/ri/v1/iso20022/callback, response: 
+&lt;FPEnvelope
+        xmlns:head=&quot;urn:iso:std:iso:20022:tech:xsd:head.001.001.03&quot;
+        xmlns:pacs=&quot;urn:iso:std:iso:20022:tech:xsd:pacs.002.001.13&quot;&gt;
+    &lt;head:AppHdr&gt;
+        &lt;head:Fr&gt;
+            &lt;head:FIId&gt;
+                &lt;head:FinInstnId&gt;
+                    &lt;head:Othr&gt;
+                        &lt;head:Id&gt;7008&lt;/head:Id&gt;
+                    &lt;/head:Othr&gt;
+                &lt;/head:FinInstnId&gt;
+            &lt;/head:FIId&gt;
+        &lt;/head:Fr&gt;
+        &lt;head:To&gt;
+            &lt;head:FIId&gt;
+                &lt;head:FinInstnId&gt;
+                    &lt;head:Othr&gt;
+                        &lt;head:Id&gt;7001&lt;/head:Id&gt;
+                    &lt;/head:Othr&gt;
+                &lt;/head:FinInstnId&gt;
+            &lt;/head:FIId&gt;
+        &lt;/head:To&gt;
+        &lt;head:BizMsgIdr&gt;17780606942475585653&lt;/head:BizMsgIdr&gt;
+        &lt;head:MsgDefIdr&gt;pacs.002.001.13&lt;/head:MsgDefIdr&gt;
+        &lt;head:CreDt&gt;2026-05-06T16:14:54+06:30&lt;/head:CreDt&gt;
+    &lt;/head:AppHdr&gt;
+    &lt;pacs:Document&gt;
+        &lt;pacs:FIToFIPmtStsRpt&gt;
+            &lt;pacs:GrpHdr&gt;
+                &lt;pacs:MsgId&gt;17780606942472490299&lt;/pacs:MsgId&gt;
+                &lt;pacs:CreDtTm&gt;2026-05-06T16:14:54+06:30&lt;/pacs:CreDtTm&gt;
+                &lt;pacs:InstgAgt&gt;
+                    &lt;pacs:FinInstnId&gt;
+                        &lt;pacs:Othr&gt;
+                            &lt;pacs:Id&gt;7008&lt;/pacs:Id&gt;
+                        &lt;/pacs:Othr&gt;
+                    &lt;/pacs:FinInstnId&gt;
+                &lt;/pacs:InstgAgt&gt;
+                &lt;pacs:InstdAgt&gt;
+                    &lt;pacs:FinInstnId&gt;
+                        &lt;pacs:Othr&gt;
+                            &lt;pacs:Id&gt;7001&lt;/pacs:Id&gt;
+                        &lt;/pacs:Othr&gt;
+                    &lt;/pacs:FinInstnId&gt;
+                &lt;/pacs:InstdAgt&gt;
+            &lt;/pacs:GrpHdr&gt;
+            &lt;pacs:TxInfAndSts&gt;
+                &lt;pacs:OrgnlGrpInf&gt;
+                    &lt;pacs:OrgnlMsgId&gt;BizMsgIdr20260506161454&lt;/pacs:OrgnlMsgId&gt;
+                    &lt;pacs:OrgnlMsgNmId&gt;pacs.002.001.13&lt;/pacs:OrgnlMsgNmId&gt;
+                &lt;/pacs:OrgnlGrpInf&gt;
+                &lt;pacs:OrgnlEndToEndId&gt;EndToEndId20260506161451&lt;/pacs:OrgnlEndToEndId&gt;
+                &lt;pacs:OrgnlTxId&gt;EndToEndId20260506161451&lt;/pacs:OrgnlTxId&gt;
+                &lt;pacs:TxSts&gt;RJCT&lt;/pacs:TxSts&gt;
+                &lt;pacs:StsRsnInf&gt;
+    &lt;pacs:Orgtr&gt;
+        &lt;pacs:Id&gt;
+            &lt;pacs:OrgId&gt;
+                &lt;pacs:Othr&gt;
+                    &lt;pacs:Id&gt;BIC&lt;/pacs:Id&gt;
+                &lt;/pacs:Othr&gt;
+            &lt;/pacs:OrgId&gt;
+        &lt;/pacs:Id&gt;
+    &lt;/pacs:Orgtr&gt;
+    &lt;pacs:Rsn&gt;
+        &lt;pacs:Prtry&gt;MWIF&lt;/pacs:Prtry&gt;
+    &lt;/pacs:Rsn&gt;
+    &lt;pacs:AddtlInf&gt;cvc-minLength-valid: Value 'ACSC' with length = '4' is not facet-valid with respect to minLength '1' for type 'Max34Text'.cvc-type.3.1.3: The value 'ACSC' of element 'Document.FIToFIPmtStsRpt.TxInfAndSts.TxSts' is not valid.&lt;/pacs:AddtlInf&gt;
+&lt;/pacs:StsRsnInf&gt;
+
+                &lt;pacs:AccptncDtTm&gt;2026-05-06T16:14:54+06:30&lt;/pacs:AccptncDtTm&gt;
+                &lt;pacs:ClrSysRef&gt;EndToEndId20260506161451&lt;/pacs:ClrSysRef&gt;
+                &lt;pacs:OrgnlTxRef&gt;
+                    &lt;pacs:IntrBkSttlmAmt Ccy=&quot;MMK&quot;&gt;102.00&lt;/pacs:IntrBkSttlmAmt&gt;
+                    &lt;pacs:Amt&gt;
+                        &lt;pacs:InstdAmt Ccy=&quot;MMK&quot;&gt;102.00&lt;/pacs:InstdAmt&gt;
+                    &lt;/pacs:Amt&gt;
+                    &lt;pacs:Dbtr&gt;
+                        &lt;pacs:Pty&gt;
+                            &lt;pacs:Nm&gt; Sai Nwet&lt;/pacs:Nm&gt;
+                            &lt;pacs:PstlAdr&gt;
+                                &lt;pacs:AdrLine&gt;N.A&lt;/pacs:AdrLine&gt;
+                            &lt;/pacs:PstlAdr&gt;
+                        &lt;/pacs:Pty&gt;
+                    &lt;/pacs:Dbtr&gt;
+                    &lt;pacs:DbtrAcct&gt;
+                        &lt;pacs:Id&gt;
+                            &lt;pacs:Othr&gt;
+                                &lt;pacs:Id&gt;2234409999999326&lt;/pacs:Id&gt;
+                                &lt;pacs:SchmeNm&gt;
+                                    &lt;pacs:Prtry&gt;TOKN&lt;/pacs:Prtry&gt;
+                                &lt;/pacs:SchmeNm&gt;
+                            &lt;/pacs:Othr&gt;
+                        &lt;/pacs:Id&gt;
+                    &lt;/pacs:DbtrAcct&gt;
+                    &lt;pacs:Cdtr&gt;
+                        &lt;pacs:Pty&gt;
+                            &lt;pacs:Nm&gt;BUSINESS MAGNET&lt;/pacs:Nm&gt;
+                        &lt;/pacs:Pty&gt;
+                    &lt;/pacs:Cdtr&gt;
+                    &lt;pacs:CdtrAcct&gt;
+                        &lt;pacs:Id&gt;
+                            &lt;pacs:Othr&gt;
+                                &lt;pacs:Id&gt;2237036522955371342522&lt;/pacs:Id&gt;
+                                &lt;pacs:SchmeNm&gt;
+                                    &lt;pacs:Prtry&gt;MRCT&lt;/pacs:Prtry&gt;
+                                &lt;/pacs:SchmeNm&gt;
+                            &lt;/pacs:Othr&gt;
+                        &lt;/pacs:Id&gt;
+                    &lt;/pacs:CdtrAcct&gt;
+                &lt;/pacs:OrgnlTxRef&gt;
+            &lt;/pacs:TxInfAndSts&gt;
+        &lt;/pacs:FIToFIPmtStsRpt&gt;
+    &lt;/pacs:Document&gt;
+&lt;/FPEnvelope&gt;
+classpath:features/payments/pacs2.feature:41
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match logTxSts == 'ACSC'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print '[PACS 2] HTTP', responseStatus, '| TxSts =', logTxSts</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># &#9472;&#9472;&#9472; Persist response body to a file &#9472;&#9472;&#9472;</div>
+
+
+<div class="brief step-name-&amp;gt; * skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def responseFile = 'karate-logs/responses/pacs2_' + logType + '_' + bizMsgIdr + '.xml'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">eval karate.write(response, responseFile)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print '[PACS 2] response written to target/' + responseFile</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def httpStatus = responseStatus</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * skipped">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def txStatusResp = logTxSts</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print '[' + type + '] PACS 8 =', pacs8Result.httpStatus, pacs8Result.txStatus, '| PACS 2 =', pacs2Result.httpStatus, pacs2Result.txStatusResp</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
